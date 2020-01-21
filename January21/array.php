@@ -14,7 +14,7 @@ echo"<br/>";
 
 echo"<br/>";
 echo"---Associative Array--- ";
-$assoc=array("abc"=>1,"xyz"=>2,3,4,"pqr"=>5);
+$assoc = array("abc"=>1,"xyz"=>2,3,4,"pqr"=>5);
 echo"<br/>";
 echo $assoc["abc"];
 echo"<br/>";
@@ -29,7 +29,7 @@ foreach ($assoc as $key => $value) {
 echo"<br/>";
 echo"---Multi-Dimensional Array---";
 echo"<br/>";
-$multi=array('Healthy'=>array('salad'=>100,'fruits'=>200),'Unhealthy'=>array('burger'=>800,'pizza'=>900));
+$multi = array('Healthy'=>array('salad'=>100,'fruits'=>200),'Unhealthy'=>array('burger'=>800,'pizza'=>900));
 print_r($multi);
 echo"<br/>";
 print_r($multi['Healthy']);

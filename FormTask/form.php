@@ -226,7 +226,8 @@
                         <?php $getInTouch = ['Phone', 'Email', 'SMS', 'Post'];?>
                         <?php
                             foreach($getInTouch as $touch) :
-                            $checked = array_intersect(getFieldValue('other','touch',[]), [$touch]) ? "checked" :"";
+                            $checked = array_intersect(getFieldValue('other','touch',[]), [$touch])                                  ? "checked"
+                                                              :"";
                        ?>
                         <input type=checkbox name="other[touch][]" value="<?=$touch;?>" <?=$checked;?> /><?=$touch;?>
                         <?php endforeach; ?>
@@ -243,7 +244,9 @@
                             <?php $hobbies = ['Blogging', "Listening to Music", "Travelling", "Sports", "Arts"];?>
                             <?php 
                 foreach($hobbies as $value) :
-                   $selected = array_intersect(getFieldValue('other' ,'hobbies',[]), [$value])? "selected" : "";  
+                   $selected = array_intersect(getFieldValue('other' ,'hobbies',[]), [$value])
+                                                                ? "selected"
+                                                                : "";  
              ?>
                             <option value="<?= $value?>" <?= $selected; ?>><?= $value; ?></option>
                             <?php endforeach; ?>

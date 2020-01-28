@@ -2,11 +2,16 @@
 session_start();
 // session_destroy();
 
-
 function getFieldValue($section, $fieldName, $returnType = ""){
-    return (isset($_POST[$section][$fieldName]) ? $_POST[$section][$fieldName] : (isset($_SESSION[$section][$fieldName]) ? $_SESSION[$section][$fieldName] : $returnType));
+    return (isset($_POST[$section][$fieldName]))
+                ? $_POST[$section][$fieldName] 
+                : getSessionValue($section, $fieldName, $returnType) ;
 }
-
+function getSessionValue($section, $fieldName, $returnType){
+    return isset($_SESSION[$section][$fieldName]) 
+    ? $_SESSION[$section][$fieldName] 
+    : $returnType;
+}
 
 function setSessionValue($sectionName){
     $validationErrors = [];
@@ -19,10 +24,11 @@ function setSessionValue($sectionName){
         $errors =implode('', $validationErrors);
         echo $errors; 
     }else{
-        return (isset($_POST[$sectionName])) ? $_SESSION[$sectionName] = $_POST[$sectionName] : "";
+         (isset($_POST[$sectionName]))
+          ? $_SESSION[$sectionName] = $_POST[$sectionName]
+          : "";
     }
 }
-
 
 
 function isValidate($fieldName, $value){

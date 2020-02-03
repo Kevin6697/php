@@ -69,13 +69,12 @@
                      $where = "1";
                      $obj = new DBConfig;
                      $resultId = $obj->fetchRow($where, $field, $tableName);  
-                     if(mysqli_num_rows($resultId) <= 0){
-                        echo "<option value =".NULL."><option>";
-                     }else{
+                     if(mysqli_num_rows($resultId) >= 0){
                         while($dataId = mysqli_fetch_assoc($resultId)){
-                            echo "<option value =".$dataId['catId'].">".$dataId['catTitle']."<option>";
+                            echo "<option value =".$dataId['catId'].">".$dataId['catTitle'];
                         }
                      }
+                     echo "<option value =''>No Parent Id<option>";
                 ?>
                 </select>
                </td>

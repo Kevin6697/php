@@ -9,6 +9,7 @@
             header("Location: index.php");
         }
     ?>
+     <a href="blogpost.php">Manage Post</a> <br> 
     <a href="viewCategory.php">Manage Category</a> <br>   
     <a href="manageProfile.php">Manage Profile</a><br>
     <a href="logout.php">Logout</a>

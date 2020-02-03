@@ -5,7 +5,6 @@
    </head>
 <body>
 <?php
-        session_start();
         if(isset($_SESSION['custId'])){
             header("Location: blogpost.php");
         }

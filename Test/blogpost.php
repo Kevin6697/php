@@ -17,12 +17,12 @@
         echo "<br/>No Data Found";
     }else{
     ?>
-    <table>
+    <table border=2>
         <th> Id</th>
-        <th> Customer Id</th>
         <th> Title</th>
         <th> url</th>
         <th> content</th>
+        <th> Category</th>
         <th> Image</th>
         <th> Published At</th>
         <th> Created At</th>
@@ -33,16 +33,17 @@
     ?>
         <tr>
             <td><?=  $data['postId'];?></td>
-            <td><?=  $data['custId'];?></td>
-            <td><?=  $data['postTitle'];?></td>
+           <td><?=  $data['postTitle'];?></td>
             <td><?=  $data['postUrl'];?></td>
             <td><?=  $data['postContent'];?></td>
+            <td>
+            </td>
             <td><img src = "uploads/<?=  $data['postImage'];?>" height=100 width=100></td>
             <td><?=  $data['postPublishedAt'];?></td>
             <td><?=  $data['postCreatedAt'];?></td>
             <td><?=  $data['postUpdatedAt'];?></td>
             <td><a href='updateCateogry.php?id=<?=  $data['postId'];?>'>Update</a></td>
-            <td><a href='viewCategory.php?catId=<?=  $data['postId'];?>'>Delete</a></td>
+            <td><a href='viewblogpost.php?postId=<?=  $data['postId'];?>'>Delete</a></td>
         </tr>    
     <?php
         }
@@ -52,8 +53,8 @@
     <br>
     <a href="addPost.php">Add New Post</a>
 <?php
-    if(isset($_GET['catId'])){
-        deleteCategory($_GET['catId']);
+    if(isset($_GET['postId'])){
+        deletePost($_GET['postId']);
     }
 
 

@@ -97,7 +97,7 @@
     }
     function displayCategory(){
         $field ="*";
-        $tableName = "category";
+        $tableName = ["category"];
         $obj = new DBConfig; 
         $result = $obj->fetchAll($field,$tableName);
         return $result;
@@ -139,7 +139,11 @@
                     $data['catContent'] = $fetchedValues['content'];
                 break;
                 case 'parentId':
+                   if($fetchedValues['parentId'] == ""){
+                    unset($fetchedValues['parentId']);
+                   }else{
                     $data['parentCatId'] = $fetchedValues['parentId'];
+                   }
                 break;
             }
         }
@@ -154,6 +158,17 @@
                echo "<br>Error";
            }else{
                header("Location: viewCategory.php");
+           }
+    }
+    function deletePost($postId){
+        $tableName ="post";
+        $where = "catId = $postId";
+        $obj = new DBConfig;
+           $status = $obj->delete($where, $tableName);
+           if($status == 0){
+               echo "<br>Error";
+           }else{
+               header("Location: viewblogpost.php");
            }
     }
     function displayData( $section, $returnType, $field){
@@ -202,14 +217,69 @@
     }
     function displayBlog(){
         $field ="*";
-        $tableName = "post";
+        $tableName = ["post"];
+        $where = "post.custId = ". $_SESSION['custId'];
         $obj = new DBConfig; 
-        $result = $obj->fetchAll($field,$tableName);
+        $result = $obj->fetchAll($field,$tableName, $where);
         return $result;   
     }
     function passpostValues($section, $file)
     {
-
+        $data =  preparePost($_POST[$section],$file);
+        $tableName = 'post';
+        $data['postCreatedAt'] = date('y-m-d');  
+        $data['custId'] = $_SESSION['custId'];
+        $obj = new DBConfig;
+        $id = $obj->insert($data, $tableName);
+        $status = 0;
+        if($id == 0){
+            echo "<br>Error";
+        }else{
+           foreach($_POST[$section] as $key){
+                if(is_array($key)){
+                    foreach($key as $value){
+                        $tableName = 'post_category';
+                        $dataId['postId'] = $id;
+                        $dataId['categoryId'] = $value; 
+                        $status = $obj->insert($dataId, $tableName);
+                    }
+                }
+           } 
+            if($status == 0){
+                echo "Error";
+            }else{
+                header("Location: blogpost.php");
+            }
+        }
+    }
+    function preparePost($fetchedValues, $file){
+        $data = [];
+        $location= "uploads/";
+        $name =  $file['file']['name'] ;  
+       $tmp =  $file['file']['tmp_name'] ;
+        if(move_uploaded_file($tmp, $location.$name)){
+            $data['postImage'] = $name;       
+        }else{
+            die("File cannot be uploaded");
+        }
+        foreach($fetchedValues as $key=>$value){
+            switch($key){
+                case 'title':
+                    $data['postTitle'] = $fetchedValues['title'];
+                break;
+                case 'content':
+                    $data['postContent'] = $fetchedValues['content'];
+                break;
+                case 'url':
+                    $data['postUrl'] = $fetchedValues['url'];
+                break;
+                case 'publish':
+                    $data['postPublishedAt'] = $fetchedValues['publish'];
+                break;
+            }
+          
+        }
+        return $data;
     }
 
 ?>

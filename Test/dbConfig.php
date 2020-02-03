@@ -13,7 +13,7 @@ class DBConfig{
     function insert($data, $tableName){
         $keys = implode(",",array_keys($data));
         $values = "'".implode("','",array_values($data))."'";
-         $query = "insert into $tableName($keys) values ($values)";
+       $query = "insert into $tableName($keys) values ($values)";
         if(mysqli_query($this->con, $query)){
             return mysqli_insert_id($this->con);
         }else{
@@ -27,7 +27,8 @@ class DBConfig{
         $result = mysqli_query($this->con, $query);
         return $result;
     }
-    function fetchAll($field, $tableName, $where=1 ){
+    function fetchAll($field, $tableName, $where=1){
+        $tableName = implode(',', $tableName);
         $query = "select $field from $tableName where $where";
         $result = mysqli_query($this->con, $query);
         return $result;

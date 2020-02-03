@@ -62,18 +62,16 @@
             </tr>
             <tr>
                <td>
-                   <select name="blogpost[parentId]" multiple> 
+                   <select name="blogpost[categoryId][]" multiple>
                 <?php
                      $tableName = 'category'; 
                      $field = ['catId','catTitle'];
                      $where = "1";
                      $obj = new DBConfig;
-                     $resultId = $obj->fetchRow($where, $field, $tableName);  
-                     if(mysqli_num_rows($resultId) <= 0){
-                         echo "";
-                     }else{
+                     $resultId = $obj->fetchRow($where, $field, $tableName); 
+                     if(mysqli_num_rows($resultId) >= 0){
                         while($dataId = mysqli_fetch_assoc($resultId)){
-                            echo "<option value =".$dataId['catId'].">".$dataId['catTitle']."<option>";
+                            echo "<option value =".$dataId['catId'].">".$dataId['catTitle'];
                         }
                      }
                 ?>

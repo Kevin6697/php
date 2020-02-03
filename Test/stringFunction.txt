@@ -1,0 +1,10 @@
+explode("delimiter", $string)
+	it is used to convert string into array seperating by using delimiter
+
+example:  
+	$string = "Hello,This is, String";
+	$array = explode(",",$string);
+	print_r($array);
+
+//output :
+	Array([0]=>Hello,[1]=>This is,[2]=>String)

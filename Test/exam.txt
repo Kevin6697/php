@@ -1,0 +1,7 @@
+array_diff($array1, $array2):
+	it is used to find difference of array 1 from array 2
+example :
+	$array1 = [10, 20];
+ 	$array2 = [10, 30];
+	echo array_diff($array1, $array2);
+//output 20

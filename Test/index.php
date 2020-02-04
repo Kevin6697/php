@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <title>Login Page</title>
+    <style>
+        @import url('style.css');
+    </style>
    </head>
 <body>
 <?php
-        if(isset($_SESSION['custId'])){
-            header("Location: blogpost.php");
-        }
-    ?>
-<?php
      require_once 'controller.php'; 
-    ?>
+    
+     if(isset($_SESSION['custId'])){
+        header("Location: blogpost.php");
+    }
+?>
     <h1>Login</h1>
     <form action=<?php echo $_SERVER['PHP_SELF'];?> method="post">
         <table>
@@ -36,9 +38,12 @@
                </td>
            </tr>
            <tr>
+                <td><br/><br/></td>
+            </tr>  
+            <tr>      
             <td>
-               <input type="submit" value="Login" name="log">
-               <a href="registration.php">Register</a>
+               <input type="submit" value="Login" name="log" class="likeabutton">
+               <a href="registration.php" class="likeabutton">Register</a>
              </td>
         </tr>
         </table>

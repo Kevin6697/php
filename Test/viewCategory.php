@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Registration Page</title>
+    <title>View Category</title>
+    <style>
+        @import url('style.css');
+    </style>
   </head>
   <body>
     <?php
@@ -17,7 +20,11 @@
         echo "<br/>No Data Found";
     }else{
     ?>
-    <table>
+    
+    <br>
+    <a href="addCategory.php" class='likeabutton'>Add New Category</a>
+    <br><br>
+    <table border=2 cellpadding=10>
         <th> Id</th>
         <th> Parent Id</th>
         <th> Title</th>
@@ -33,24 +40,28 @@
     ?>
         <tr>
             <td><?=  $data['catId'];?></td>
-            <td><?=  $data['parentCatId'];?></td>
+            <td><?php
+                    if($data['parentCatId'] == ""){
+                        echo "-";
+                    }else{
+                        echo $data['parentCatId'];   
+                    }
+                ?></td>
             <td><?=  $data['catTitle'];?></td>
             <td><?=  $data['catMetaTitle'];?></td>
             <td><?=  $data['catUrl'];?></td>
             <td><?=  $data['catContent'];?></td>
-            <td><img src = "uploads/<?=  $data['catFile'];?>" height=100 width=100></td>
+            <td><img alt="Category" src="uploads/<?=  $data['catFile'];?>" height=100 width=100></td>
             <td><?=  $data['catCreatedAt'];?></td>
             <td><?=  $data['catUpdatedAt'];?></td>
-            <td><a href='updateCateogry.php?id=<?=  $data['catId'];?>'>Update</a></td>
-            <td><a href='viewCategory.php?catId=<?=  $data['catId'];?>'>Delete</a></td>
+            <td><a class='likeabutton'  href='updateCategory.php?id=<?=  $data['catId'];?>'>Update</a></td>
+            <td><a class='likeabutton' href='viewCategory.php?catId=<?=  $data['catId'];?>'>Delete</a></td>
         </tr>    
     <?php
         }
     }
     ?>
     </table>
-    <br>
-    <a href="addCategory.php">Add New Category</a>
 <?php
     if(isset($_GET['catId'])){
         deleteCategory($_GET['catId']);

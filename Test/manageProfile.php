@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Registration Page</title>
+    <title>My Profile Page</title>
+    <style>
+        @import url('style.css');
+    </style>
   </head>
   <body>
 
@@ -12,7 +15,7 @@
          }
          require_once 'header.php';
          require_once 'controller.php';
-    $tableName ="user";
+    $tableName =["user"];
     $field = ["*"];
     $where = "custId = ".$_SESSION['custId'];
     $obj = new DBConfig;

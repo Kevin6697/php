@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Registration Page</title>
-  </head>
-  <body>
   <?php
         if(!isset($_SESSION['custId'])){
             header("Location: index.php");
         }
     ?>
-     <a href="blogpost.php">Manage Post</a> <br> 
-    <a href="viewCategory.php">Manage Category</a> <br>   
-    <a href="manageProfile.php">Manage Profile</a><br>
-    <a href="logout.php">Logout</a>
-</body>
-</html>
+    <br/>
+    <a href="blogpost.php" class="likeabutton">Manage Post</a> 
+    <a href="viewCategory.php" class="likeabutton">Manage Category</a>
+    <a href="manageProfile.php" class="likeabutton">Manage Profile</a>
+    <a href="logout.php" class="likeabutton">Logout</a>
+    <br/><br/>

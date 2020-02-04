@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Registration Page</title>
+    <title>Add New Category</title>
+    <style>
+        @import url('style.css');
+    </style>
   </head>
   <body>
     <?php
@@ -11,6 +14,7 @@
         }
         require_once 'header.php';
         require_once 'controller.php';
+        unset($_SESSION['dataObj']);
     ?>
     <h1>Add New Category</h1>
     <form action=<?php echo $_SERVER['PHP_SELF'];?> method="post" enctype="multipart/form-data">
@@ -32,7 +36,7 @@
             </tr>
             <tr>
                <td>
-               <input type="text" name="category[content]" value=<?php echo getValues("category","content");?> >
+               <textarea  rows=8 cols=20 name="category[content]"><?php echo getValues("category","content"); ?></textarea>
                </td>
            </tr>
            <tr>
@@ -42,7 +46,7 @@
             </tr>
             <tr>
                <td>
-               <input type="text" name="category[url]" value=<?php echo getValues("category","url");?> >
+               <textarea  rows=8 cols=20 name="category[url]"><?php echo getValues("category","url"); ?></textarea>
                </td>
            </tr>
            <tr>
@@ -64,7 +68,7 @@
                <td>
                    <select name="category[parentId]"> 
                 <?php
-                     $tableName = 'category'; 
+                     $tableName = ['category']; 
                      $field = ['catId','catTitle','parentCatId'];
                      $where = "1";
                      $obj = new DBConfig;

@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <title>Registration Page</title>
+    <style>
+        @import url('style.css');
+    </style>
   </head>
   <body>
     <?php
@@ -114,13 +117,17 @@
         </tr>
         <tr>
           <td>
-            <input type="checkbox" name="register[check]" checked />Hereby, I
+            <input type="checkbox" name="register[check]" id="checkTC" onchange="tc(this.checked);"/>Hereby, I
             accept terms and conditions
           </td>
         </tr>
         <tr>
+                <td><br/><br/></td>
+        </tr> 
+        <tr>
           <td>
-            <input type="submit" value="register" name="reg" />
+            <input type="button" value="Register" class="likeabutton" onclick="checkTandC();" id="reg" name="reg"  />
+            <a href="index.php" class="likeabutton">Login</a>
           </td>
         </tr>
       </table>
@@ -130,5 +137,21 @@
       passRegistrationValues('register');
   }
 ?>    
+<script>
+  function tc(checked){
+    var reg = document.getElementById('reg');
+    var checkTC = document.getElementById('checkTC');
+    if(checked){   
+      reg.setAttribute('type','submit');
+      checkTC.setAttribute('disabled',true);
+    }
+  }
+  function checkTandC(){
+    var checkTC = document.getElementById('checkTC');
+    if(checkTC.checked == false){
+      alert("Terms and Condition are needs to be agreed");
+    }
+  }
+ </script> 
   </body>  
 </html>

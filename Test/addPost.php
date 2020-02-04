@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Registration Page</title>
+      <title>Add New Category</title>
+      <style>
+        @import url('style.css');
+    </style>
   </head>
   <body>
     <?php
@@ -22,7 +25,7 @@
              </tr>
              <tr>
                 <td>
-                   <input type="text" name="blogpost[title]" value=<?php echo getValues("blogpost","title");?> >
+                   <input type="text" name="blogpost[postTitle]" value=<?php echo getValues("blogpost","postTitle");?> >
                 </td>
             </tr>
             <tr>
@@ -32,7 +35,7 @@
             </tr>
             <tr>
                <td>
-               <input type="text" name="blogpost[content]" value=<?php echo getValues("blogpost","content");?> >
+               <textarea  rows=8 cols=20 name="blogpost[postContent]"><?php echo getValues("blogpost","postContent");?></textarea>
                </td>
            </tr>
            <tr>
@@ -42,7 +45,7 @@
             </tr>
             <tr>
                <td>
-               <input type="text" name="blogpost[url]" value=<?php echo getValues("blogpost","url");?> >
+               <textarea  rows=8 cols=20 name="blogpost[postURL]"><?php echo getValues("blogpost","postURL");?></textarea>
                </td>
            </tr>
            <tr>
@@ -52,7 +55,7 @@
             </tr>
             <tr>
                <td>
-               <input type="date" name="blogpost[publish]" value=<?php echo getValues("blogpost","publish");?> >
+               <input type="date" name="blogpost[postPublish]" value=<?php echo getValues("blogpost","postPublish");?> >
                </td>
            </tr>
            <tr>
@@ -64,14 +67,15 @@
                <td>
                    <select name="blogpost[categoryId][]" multiple>
                 <?php
-                     $tableName = 'category'; 
+                     $tableName = ['category']; 
                      $field = ['catId','catTitle'];
                      $where = "1";
                      $obj = new DBConfig;
                      $resultId = $obj->fetchRow($where, $field, $tableName); 
                      if(mysqli_num_rows($resultId) >= 0){
                         while($dataId = mysqli_fetch_assoc($resultId)){
-                            echo "<option value =".$dataId['catId'].">".$dataId['catTitle'];
+                            $selected = array_intersect(getValues('blogpost','categoryId',[]),[$dataId['catId']]) ? "selected" : "";
+                            echo "<option ". $selected ." value =".$dataId['catId'].">".$dataId['catTitle'];
                         }
                      }
                 ?>

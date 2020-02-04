@@ -23,6 +23,7 @@ class DBConfig{
     }
     function fetchRow($where, $field,$tableName){
         $field = implode(',',$field);
+        $tableName = implode(',', $tableName);
         $query = "select $field from $tableName where $where";
         $result = mysqli_query($this->con, $query);
         return $result;
@@ -36,24 +37,46 @@ class DBConfig{
     function delete($where, $tableName){
         $query = "delete from $tableName where $where";
         $result = mysqli_query($this->con, $query);
-        return $result;
+        if(mysqli_query($this->con, $query)){
+            return 1;
+        }else{
+            echo mysqli_error($this->con);
+            return 0;
+        }   
     }
     function update($data, $tableName, $where){
         $values = "";
         $count = 1 ; 
         foreach($data as $key=>$value){
+            // if($key == "parentCatId"){
+            //     if($value == ""){
+            //         $value = NULL;   
+            //     }
+            // }
+           
             $values .= "$key = '$value'";
             if(count($data) > $count){
                 $values .=',';
             }
             $count++;
         }
-        $query = "update  $tableName set $values where $where";
+       $query = "update $tableName set $values where $where";      
+       $result = mysqli_query($this->con, $query);
+        if(mysqli_query($this->con, $query)){
+                return 1;
+            }else{
+                echo mysqli_error($this->con);
+                return 0;
+            }   
+    }
+    function isUnique($tableName, $field, $where){
+        $query = "select $field from $tableName where $where";
         $result = mysqli_query($this->con, $query);
-        return $result;
+        if(mysqli_num_rows($result) > 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
-
-
-
 ?>

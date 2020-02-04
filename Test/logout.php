@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Registration Page</title>
+    <title>Logout</title>
+    <style>
+        @import url('style.css');
+    </style>
   </head>
   <body>
     <?php

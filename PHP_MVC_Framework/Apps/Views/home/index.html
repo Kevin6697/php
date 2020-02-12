@@ -1,0 +1,9 @@
+{% extends "header.html" %}
+       {% block body %} 
+            {{name}}
+            <ul>
+                {% for colour in colours %}
+                    <li>{{ colour }}</li>
+                {% endfor %}
+            </ul>
+{% endblock %}    

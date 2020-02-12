@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+    <head></head>
+    <body>
+        <a href="{{base_url}}/home/index"> Home</a>
+        <a href="{{base_url}}/posts/index"> Posts</a>
+        <br>
+        {% block body %}
+        {% endblock %}
+        <script>
+            function deleteConfirm() {
+              var conf = confirm("are u sure you want to delete this");
+              if(conf){
+                  return true;
+              }else{
+                  return false;
+              }
+            }
+        </script>
+    </body>
+</html>

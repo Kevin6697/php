@@ -1,0 +1,3 @@
+function deleteConfirm() {
+    alert("hello");
+}

@@ -1,0 +1,30 @@
+{% extends "header.html" %}
+       {% block body %} 
+            {{name}}
+            <table border="1" cellpadding=10>  
+                <th>Title</th><th>Content</th><th colspan="2">Action</th>
+                {% for post in posts %}
+                    <tr>
+                       <td> {{ post.postTitle }}</td>
+                        <td>{{ post.postContent }}</td>
+                        <td>
+                            <form method="post" action="{{base_url}}/posts/delete">
+                                <input type="hidden" name="id" value="{{post.postId}}">
+                                <input type="submit" value="delete" onclick="return deleteConfirm();">
+                            </form>
+                        </td>
+                        <td><a href="{{base_url}}/posts/{{post.postId}}/edit">Update</a></td>
+                    </tr>    
+                {% endfor %}
+            </table>    
+            <br/>
+            <form method="post" action="new" >
+                Post Title: <input type="text" name="txt1" required>
+                <br/>
+                <br/>
+                Post Content : <textarea name="ta1" required></textarea name="ta1">
+                <br/>
+                <input type ="submit" value="Add" name="Add">   
+            </form>
+            {{errorMessage}}
+{% endblock %}    

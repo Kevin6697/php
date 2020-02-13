@@ -4,6 +4,19 @@
     Twig
 */
 require_once '../vendor/autoload.php';
+session_start();
+
+$_SESSION['base_url'] = "http://localhost/Internship/PHP_MVC_Framework";
+
+// phpinfo();
+
+/* 
+    Error and Exception Handling 
+*/
+error_reporting(E_ALL);
+set_error_handler('Core\Error::errorHandler');
+set_exception_handler('Core\Error::exceptionHandler');
+
 
 
 /*
@@ -20,8 +33,6 @@ require_once '../vendor/autoload.php';
 
 
 $router = new Core\Router;
-
-
 
 $router->add('', ['controller' => 'Home', 'action' =>'indexAction']);
 // $router->add('posts', ['controller' => 'Posts', 'action' =>'index']);

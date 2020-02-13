@@ -2,8 +2,8 @@
 <html >
     <head></head>
     <body>
-        <a href="{{base_url}}/home/index"> Home</a>
-        <a href="{{base_url}}/posts/index"> Posts</a>
+        <a href="{{session.base_url}}/public/home/index"> Home</a>
+        <a href="{{session.base_url}}/public/posts/index"> Posts</a>
         <br>
         {% block body %}
         {% endblock %}
@@ -15,6 +15,11 @@
               }else{
                   return false;
               }
+            }
+            function updateForm(){
+                document.getElementById("add").style.display = none;
+                document.getElementById("edit").style.display = block;
+
             }
         </script>
     </body>

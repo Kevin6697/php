@@ -1,22 +1,21 @@
 <?php
 namespace Core;
 use PDO;
+use Apps\Config;
+
 abstract class Model {
     protected static function connection() {
         static $db = null;
         if ($db == null) {
-            $host = "localhost";
-            $dbName = "php_custom_mvc";
-            $username = "root";
-            $pwd = "";
-            try {
-                $db = new PDO("mysql:host=$host;dbname=$dbName;
-                               charset=utf8", $username, $pwd);
+            // try {
+                $dsn = "mysql:host=".Config ::HOST.";dbname=".Config::DBNAME.";charset=utf8";
+                $db = new PDO($dsn, Config::USERNAME, Config::PASSWORD);
+                $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 return $db;
-            }
-            catch(Exception $e) {
-                echo $e->getMessage();
-            }
+            // }
+            // catch(Exception $e) {
+            //     echo $e->getMessage();
+            // }
         } else {
             return $db;
         }

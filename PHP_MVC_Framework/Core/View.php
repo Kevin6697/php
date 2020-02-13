@@ -10,7 +10,7 @@ class View{
         if(is_readable($file)){
             require_once $file;
         }else{
-            echo '$file not found';
+            throw new \Exception('$file not found');
         }
     }
     public static function renderTemplate($template, $args = []){
@@ -18,7 +18,11 @@ class View{
         if($twig == null){
             $loader = new \Twig\Loader\FilesystemLoader('../Apps/Views');
             $twig = new \Twig\Environment($loader);
+            $twig->addGlobal('session', $_SESSION);
         }
+        
         echo $twig->render($template, $args);
+        $_SESSION['errorMessage'] = "";
+        $twig->addGlobal('session',$_SESSION);
     } 
 }

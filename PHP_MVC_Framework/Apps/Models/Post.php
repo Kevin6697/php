@@ -14,9 +14,21 @@ class Post extends \Core\Model{
     public static function insert($query){
         $db = static::connection(); 
         $stmt = $db->exec($query);
+        // echo $lastid = $db->lastInsertId();
         return $stmt;
     } 
     public static function delete($query){
+        $db = static::connection(); 
+        $stmt = $db->exec($query);
+        return $stmt;
+    } 
+    public static function fetchRow($query){
+        $db = static::connection(); 
+        $stmt = $db->query($query);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result;        
+    }
+    public static function update($query){
         $db = static::connection(); 
         $stmt = $db->exec($query);
         return $stmt;

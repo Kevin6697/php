@@ -8,23 +8,24 @@
                        <td> {{ post.postTitle }}</td>
                         <td>{{ post.postContent }}</td>
                         <td>
-                            <form method="post" action="{{session.base_url}}/public/posts/delete">
+                            <form method="post" action="{{base_url}}/posts/delete">
                                 <input type="hidden" name="id" value="{{post.postId}}">
                                 <input type="submit" value="delete" onclick="return deleteConfirm();">
                             </form>
                         </td>
-                        <td><a href="{{session.base_url}}/public/posts/{{post.postId}}/fetchEdit">Update</a></td>
+                        <td><a href="{{base_url}}/public/posts/{{post.postId}}/fetchEdit">Update</a></td>
                     </tr>    
                 {% endfor %}
             </table>    
             <br/>
-            <form method="post" action="new" >
-                Post Title: <input type="text" name="txt1" required>
+            <form method="post" action="edit" >
+                <input type="hidden" value="{{postsUpdate.postId}}" name="id">
+                Post Title: <input type="text" name="txt1" value="{{postsUpdate.postTitle}}" required>
                 <br/>
                 <br/>
-                Post Content : <textarea name="ta1" required></textarea name="ta1">
+                Post Content : <textarea name="ta1" required>{{postsUpdate.postContent}}</textarea name="ta1">
                 <br/>
-                <input type ="submit" value="Add" name="Add">   
+                <input type ="submit" value="Edit" name="Edit">   
             </form>
-        {{session.errorMessage}}
+            
 {% endblock %}    

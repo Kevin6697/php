@@ -13,9 +13,8 @@ class Home extends \Core\Controller {
         //                         ]);
         View::renderTemplate('home/index.html',[
                             'name' => 'xyz', 
-                           'colours' => ['green','red','blue'],
-                           'base_url' => dirname($_SERVER['SCRIPT_NAME'])
-        ]);
+                           'colours' => ['green','red','blue']
+                           ]);
     }
     protected function newAction(){
         echo "add new post";

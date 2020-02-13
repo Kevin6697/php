@@ -1,0 +1,30 @@
+[13-Feb-2020 18:18:09 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\public\index.php(55): Core\Router->dispatch('posts/index5')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Core\Router.php' on line 78
+--------------------------------------------------------------------------------------
+[13-Feb-2020 18:18:20 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\public\index.php(55): Core\Router->dispatch('posts')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Core\Router.php' on line 78
+--------------------------------------------------------------------------------------
+[13-Feb-2020 18:18:30 Asia/Kolkata] Uncaught exception: 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Apps\Models\Post.php(10): PDO->query('select * from p...')
+#1 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Apps\Controllers\Posts.php(11): Apps\Models\Post::getAll()
+#2 [internal function]: Apps\Controllers\Posts->indexAction()
+#3 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Core\Controller.php(17): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Core\Router.php(69): Core\Controller->__call('indexAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\public\index.php(55): Core\Router->dispatch('posts/index')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Apps\Models\Post.php' on line 10
+--------------------------------------------------------------------------------------
+[13-Feb-2020 18:18:38 Asia/Kolkata] Uncaught exception: 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Ffth posts' for key 'postTitle''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Apps\Models\Post.php(16): PDO->exec('insert into pos...')
+#1 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Apps\Controllers\Posts.php(19): Apps\Models\Post::insert('insert into pos...')
+#2 [internal function]: Apps\Controllers\Posts->newAction()
+#3 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Core\Controller.php(17): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Core\Router.php(69): Core\Controller->__call('newAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\public\index.php(55): Core\Router->dispatch('posts/new')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\PHP_MVC_Framework\Apps\Models\Post.php' on line 16
+--------------------------------------------------------------------------------------

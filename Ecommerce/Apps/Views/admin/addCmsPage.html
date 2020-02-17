@@ -1,0 +1,24 @@
+{% extends "adminHeader.html" %}
+{% block title %}Add CMS Page{% endblock %}
+{% block body %}
+  <div id="mainContainer" >   
+      <form action="{{session.base_url}}/public/admin/CMS/Pages/add" method="post" >
+        <h2>Add CMS Page</h2>
+        <div class="input-container">
+          <input class="input-field" type="text" placeholder="Title" name="cmstitle" required>
+        </div>
+        <div class="input-container">
+          <select class="input-field" name="cmsstatus">
+              <option value="1">Available</option>
+              <option value="0">Unavailable</option>
+            </select>
+        </div>
+        <div class="input-container">
+          <textarea class="input-field" rows="6" name ='cmscontent' placeholder="Content"></textarea>
+        </div>
+        <button type="submit" class="btn">Add</button>
+      </form>
+    </div>   
+    {{session.errorMessage}}
+
+{% endblock %}

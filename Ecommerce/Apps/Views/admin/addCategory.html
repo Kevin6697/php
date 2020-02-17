@@ -1,0 +1,40 @@
+{% extends "adminHeader.html" %}
+{% block title %}Add Category{% endblock %}
+{% block body %}
+  <div id="mainContainer" >   
+      <form action="{{session.base_url}}/public/admin/category/add" method="post" enctype="multipart/form-data">
+        <h2>Add Category</h2>
+        <div class="input-container">
+          <input class="input-field" type="text" placeholder="Name" name="cname" required>
+        </div>
+         <div class="input-container">
+          <input class="input-field" type="file" name="cimg" required>
+        </div>
+        <div class="input-container">
+          <select class="input-field" name="cstatus">
+              <option value="1">Available</option>
+              <option value="0">Unavailable</option>
+            </select>
+        </div>
+        <div class="input-container">
+          <textarea class="input-field" rows="6" name ='cdesc' placeholder="Description"></textarea>
+        </div>
+        <div class="input-container">
+          <select class="input-field" name="cparent">
+            {% if data == null %}
+                <option value="0 "> No Parent Id </option>
+            {% endif %}
+            {% if data != null %}
+                {% for dt in data %}
+                  <option value={{dt.categoryId}}>{{dt.categoryName}}</option>
+                {% endfor %}  
+                <option value="0 " selected> No Parent Id </option>
+            {% endif %}
+          </select>
+         </div>
+        <button type="submit" class="btn">Add</button>
+      </form>
+    </div>   
+    {{session.errorMessage}}
+
+{% endblock %}

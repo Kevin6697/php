@@ -1,0 +1,67 @@
+{% extends "adminHeader.html" %}
+{% block title %}Add Product{% endblock %}
+{% block body %}
+  <div id="mainContainer" >   
+      <form action="{{session.base_url}}/public/admin/products/add" method="post" enctype="multipart/form-data">
+        <h2>Add Product</h2>
+    <div id="basicForm">   
+        <div class="input-container">
+          <input class="input-field" type="text" placeholder="Name" name="pname" required>
+        </div>
+        <div class="input-container">
+            <input class="input-field" type="number" min=1  placeholder="Stock Keeping Unit" name="psku" required>
+          </div>
+          <div class="input-container">
+            <input class="input-field" type="file" name="pimg" required>
+          </div>
+          <div class="input-container">
+            <textarea class="input-field" rows="6" name ='pdesc' placeholder="Description"></textarea>
+          </div>
+          <div class="input-container">
+            <textarea class="input-field" rows="6" maxlength="250" name ='psdesc' placeholder=" Short Description"></textarea>
+          </div>
+          <div class="input-container">
+            <input class="input-field" type="number" min=10 max=1000000  placeholder="Price" name="pprice" required>
+          </div>
+          <div class="input-container">
+            <input class="input-field" type="number" min=1  placeholder="Stock" name="pstock" required>
+          </div>
+          <div class="input-container">
+            <select class="input-field" name="pstatus">
+                <option value="1">Available</option>
+                <option value="0">Unavailable</option>
+              </select>
+          </div>
+          <input type="button" name="next" value="Next" id="next" class="btn" onclick="nextForm();">
+    </div>      
+    <div id="categoryForm">      
+        <h2>Select Category</h2>
+        <div class="input-container">
+            {% if categories != null %}
+                {% for cat in categories %}  
+                    <input type='checkbox' name='cat[]' value={{cat.categoryId}}>{{cat.categoryName}}
+                {% endfor %}  
+            {% endif %}
+         </div>
+        <input type="button" name="prev" value="Prev" id="prev" onclick="prevForm();" class="btn">
+        <div style="margin-top: 5%;">
+         <button type="submit" class="btn">Add</button>
+        </div> 
+    </div>     
+      </form>
+    </div>   
+    {{session.errorMessage}}
+<script>
+    document.getElementById("categoryForm").style.display = "none";
+    function nextForm(){
+        document.getElementById("categoryForm").style.display = "block";
+        document.getElementById("basicForm").style.display = "none";
+        
+    }
+    function prevForm(){
+        document.getElementById("categoryForm").style.display = "none";
+        document.getElementById("basicForm").style.display = "block";
+        
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,140 @@
+     /* Style the navigation bar */
+     .navbar {
+        width: 100%;
+        background-color: dodgerblue;
+        overflow: auto;
+      }
+      .navbar a:hover {
+        background-color:lightblue;
+        box-shadow: 0 5px 0 lightblue;
+        color : dodgerblue;
+      
+      }
+      /* Navbar links */
+      .navbar a {
+        float: left;
+        text-align: center;
+        padding: 13px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        width: 18%;
+      }
+      #container{
+        margin-top: 2%;
+      }
+      #viewproducts{
+        margin-top: 5%;
+      }
+
+      /* Navbar links on mouse-over */
+      #add:hover {
+        background-color:lightblue;
+        box-shadow: 0 5px 0 lightblue;
+        color : dodgerblue;
+      
+      }
+      #add {
+      background-color: dodgerblue;
+      box-shadow: 0 5px 0 dodgerblue;
+      color: white;
+      padding: 1em 1.5em;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-left: 40%;
+    }
+    #delete:active {
+      box-shadow: none;
+      top: 5px;
+    }
+    #delete:hover {
+      background-color:lightblue;
+      color : dodgerblue;
+    
+    }
+    #delete {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 40%;
+  }
+  #delete:active {
+    box-shadow: none;
+    top: 5px;
+  }
+    * {box-sizing: border-box;}
+        #mainContainer{
+            margin-left: 30%;
+        }
+        .input-container {
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+        }
+
+        /* Style the form icons */
+        .icon {
+        padding: 10px;
+        background: dodgerblue;
+        color: white;
+        min-width: 50px;
+        text-align: center;
+        }
+
+        /* Style the input fields */
+        .input-field {
+        width: 50%;
+        padding: 10px;
+        outline: none;
+        }
+
+        .input-field:focus {
+        border: 2px solid dodgerblue;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+        background-color: dodgerblue;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        opacity: 0.9;
+        }
+
+        .btn:hover {
+        opacity: 1;
+        }
+        #category {
+          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #category td, #category th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #category tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #category tr:hover {background-color: #ddd;}
+        
+        #category th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: dodgerblue;
+          color: white;
+        }
+     
+      /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+      @media screen and (max-width: 500px) {
+        .navbar a {
+          float: none;
+          display: block;
+        }
+      }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+       @import url("{{session.base_url}}/resources/user.css");
+    </style>
+    </head>
+    <body>
+        <div class="navbar">
+           <a id="sitename" href="{{session.base_url}}/public/">Cyber Cart</a>
+           {% for d in data %}
+            <div class="dropdown">
+                <form method="post" action="{{session.base_url}}/public/category/view/categoryView.html">
+                    <input type="hidden" value="{{d.categoryUrlKey}}" name="urlkey">
+                    <input type="hidden" value="{{d.categoryName}}" name="catname">
+                    <button type = "submit" class="dropbtn">{{d.categoryName}}
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                </form> 
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% block body %}
+          
+        {% endblock %}
+        <div>
+        <footer>
+            <div class="footer">
+                <a class="active" href="{{session.base_url}}/public/"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="{{session.base_url}}/public/"><i class="fa fa-fw fa-search"></i>About Us</a>
+                <a href="{{session.base_url}}/public/"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+                &copy; Copyright Cybercom Creation 2020
+              </div>  
+        </footer>
+      </div>  
+    </body>
+</html>

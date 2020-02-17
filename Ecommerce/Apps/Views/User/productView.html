@@ -1,0 +1,30 @@
+{% block body %}
+<div class="row">
+    {% for dt in data %}
+    <div class="column" style="background-color:#aaa;">
+        <img src="{{session.base_url}}/resources/uploads/products/{{dt.productImage}}" height="550" width="650">
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h1>{{dt.productName}}</h1>
+      <p>Rs. {{dt.productPrice}}</p>
+      <p>
+          {% if (dt.productStatus) == 1 %}
+            In Stock
+          {% endif %}
+          {% if (dt.productStatus) == 0 %}
+          Currently Available
+        {% endif %}
+      </p>
+      <p>Qty :
+          <form>
+              <select>
+                  <option>1</option> 
+                  <option>2</option>
+                  <option>3</option>  
+              </select>
+          </form>
+      </p>
+    </div>
+    {% endfor %}
+</div>    
+{% endblock %}

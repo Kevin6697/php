@@ -1,0 +1,81 @@
+{% extends "adminHeader.html" %} {% block title %}View Product{% endblock %} {%
+    block body %}
+    <div id="container">
+      <a href="{{session.base_url}}/public/admin/products/addForm" id="add"
+        >Add Product</a
+      >
+      <div id="viewproducts">
+        {{session.errorMessage}} {% if data == null %} {{ "No Product found"}} {%
+        endif %} {% if data != null %}
+        <table id="category">
+          <tr>
+            <th width=10%>Name</th>
+            <th>Price</th>
+            <th width=7%>Image</th>
+            <th>Status</th>
+            <th width=7%>urlKey</th>
+            <th width=7%>Categories</th>
+            <th>SKU</th>
+            <th>Stock</th>
+            <th colspan="2" width=30%>Action</th>
+          </tr>
+          {% for d in data %}
+          <tr>
+            <td>{{d.productName}}</td>
+            <td>{{d.productPrice}}</td>
+            <td>
+              <img
+                height="100"
+                width="100"
+                src="{{session.base_url}}/resources/uploads/products/{{d.productImage}}"
+              />
+            </td>
+            <td>
+              {% if d.productStatus == 0 %} Unavailable {% endif %} {% if
+              d.productStatus == 1 %} Available {% endif %}
+            </td>
+            <td>{{d.productUrlKey}}</td>
+            <td>{{d.Category}}</td>
+            <td>{{d.productSKU}}</td>
+            <td>{{d.productStock}}</td>
+            <td>
+              <a
+                id="add"
+                href="{{session.base_url}}/public/admin/products/editForm/{{d.productId}}"
+                >Update</a
+              >
+            </td>
+            <td>
+              <form
+                method="post"
+                action="{{session.base_url}}/public/admin/products/delete"
+              >
+                <input type="hidden" value="{{d.productId}}" name="id" />
+                <input
+                  type="submit"
+                  id="delete"
+                  value="Delete"
+                  onclick="return deletconfirmation();"
+                />
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+    
+        {% endif %}
+      </div>
+    </div>
+    <script>
+      function deletconfirmation() {
+        var conf = confirm("are u sure you want to delete this");
+        if (conf) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+    
+    {% endblock %}
+    

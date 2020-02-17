@@ -1,0 +1,54 @@
+{% extends "adminHeader.html" %}
+{% block title %}Edit Category{% endblock %}
+{% block body %}
+  <div id="mainContainer" >   
+      <form action="{{session.base_url}}/public/admin/category/edit" method="post" enctype="multipart/form-data">
+        <h2>Edit Category</h2>
+        <div class="input-container">
+            <input class="input-field" type="hidden" value={{data.categoryId}} name="cid" required>
+            <input class="input-field" type="text" placeholder="Name" value="{{data.categoryName}}" name="cname" required>
+        </div>
+         <div class="input-container">
+          <input class="input-field" type="file" name="cimg">
+        </div>
+        <div class="input-container">
+          <select class="input-field" name="cstatus">
+              {% if data.categoryStatus == 1 %}
+              <option value="1" selected>Available</option>
+              <option value="0">Unavailable</option>
+              {% endif %}
+              {% if data.categoryStatus == 0 %}
+              <option value="1">Available</option>
+              <option value="0" selected>Unavailable</option>
+              {% endif %}
+              </select>
+        </div>
+        <div class="input-container">
+          <textarea class="input-field" rows="6" name ='cdesc' placeholder="Description">{{data.categoryDescription}}</textarea>
+        </div>
+        <div class="input-container">
+          <select class="input-field" name="cparent">
+            {% if parentData == null %}
+                <option value="0"> No Parent Id </option>
+            {% endif %}
+            {% if parentData != null %}
+                {% for dt in parentData %}
+                    {% if dt.categoryId == data.parentCategory %}
+                    <option value={{dt.categoryId}} selected >{{dt.categoryName}}</option>
+                    {% endif %}
+                    {% if dt.categoryId != data.parentCategory %}
+                    <option value={{dt.categoryId}} >{{dt.categoryName}}</option>
+                    {% endif %}
+                {% endfor %} 
+                {% if data.parentCategory == null %}
+                    <option value="0" selected> No Parent Id </option> 
+                 {% endif %}   
+            {% endif %}
+          </select>
+         </div>
+        <button type="submit" class="btn">Edit</button>
+      </form>
+    </div>   
+    {{session.errorMessage}}
+
+{% endblock %}

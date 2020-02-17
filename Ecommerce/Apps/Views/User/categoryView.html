@@ -1,0 +1,22 @@
+{% block body %}
+{% if(data) == null  %}
+<br/>
+No Product Available Currently
+{% endif %}
+{% if(data) != null  %}
+<h4>{{categoryName}}</h4>
+<div class="grid-container">
+    {% for dt in data %}
+   <div class="grid-item">       
+        <div>
+        <a href="{{session.base_url}}/public/product/view/productView.html/{{dt.productUrlKey}}"><img src="{{session.base_url}}/resources/uploads/products/{{dt.productImage}}" height="200" width="200"></a>
+     </div>
+     <a href="{{session.base_url}}/public/product/view/productView.html/{{dt.productUrlKey}}">{{dt.productName}}</a>
+    </div>
+   {% endfor %}
+</div>
+{% endif %}
+{% endblock %}
+
+</body>
+</html>

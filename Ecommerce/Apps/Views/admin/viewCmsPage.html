@@ -1,0 +1,69 @@
+{% extends "adminHeader.html" %}
+{% block title %}View CMS pages{% endblock %}
+{% block body %}
+<div id="container">
+    <a href="{{session.base_url}}/public/admin/CMS/pages/addForm" id="add"
+      >Add CMS Page</a
+    >
+    <div id="viewproducts">
+        {{session.errorMessage}} {% if data == null %} {{ "No CMS Pages found"}} {%
+        endif %} {% if data != null %}
+        <table id="category">
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>urlKey</th>
+            <th colspan="2">Action</th>
+          </tr>
+          {% for d in data %}
+          <tr>
+            <td>{{d.cmsPageTitle}}</td>
+            <td>
+              {% if d.cmsPageContent == "" %} - {% endif %} {% if
+              d.cmsPageContent != "" %} {{d.cmsPageContent}} {% endif %}
+            </td>
+            <td>
+              {% if d.cmsPageStatus == 0 %} Unavailable {% endif %} {% if
+              d.cmsPageStatus == 1 %} Available {% endif %}
+            </td>
+            <td>{{d.cmsPageUrlKey}}</td>
+            <td>
+              <a
+                id="add"
+                href="{{session.base_url}}/public/admin/cms/pages/editForm/{{d.cmsPagesId}}"
+                >Update</a
+              >
+            </td>
+            <td>
+              <form
+                method="post"
+                action="{{session.base_url}}/public/admin/cms/pages/delete"
+              >
+                <input type="hidden" value="{{d.cmsPagesId}}" name="id" />
+                <input
+                  type="submit"
+                  id="delete"
+                  value="Delete"
+                  onclick="return deletconfirmation();"
+                />
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+    
+        {% endif %}
+    </div>
+    <script>
+      function deletconfirmation() {
+        var conf = confirm("are u sure you want to delete this");
+        if (conf) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>    
+</div>    
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "adminHeader.html" %}
+{% block title %}Edit CMS Pages{% endblock %}
+{% block body %}
+  <div id="mainContainer" >   
+      <form action="{{session.base_url}}/public/admin/cms/pages/edit" method="post">
+        <h2>Edit CMS Pages</h2>
+        <div class="input-container">
+            <input class="input-field" type="hidden" value={{data.cmsPagesId}} name="cmsId" required>
+            <input class="input-field" type="text" placeholder="Name" value="{{data.cmsPageTitle}}" name="cmstitle" required>
+        </div>
+        <div class="input-container">
+          <select class="input-field" name="cmsstatus">
+              {% if data.cmsPageStatus == 1 %}
+              <option value="1" selected>Available</option>
+              <option value="0">Unavailable</option>
+              {% endif %}
+              {% if data.cmsPageStatus == 0 %}
+              <option value="1">Available</option>
+              <option value="0" selected>Unavailable</option>
+              {% endif %}
+              </select>
+        </div>
+        <div class="input-container">
+          <textarea class="input-field" rows="6" name ='cmscontent' placeholder="Description">{{data.cmsPageContent}}</textarea>
+        </div>
+        <button type="submit" class="btn">Edit</button>
+      </form>
+    </div>   
+    {{session.errorMessage}}
+
+{% endblock %}

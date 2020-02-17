@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+        @import url("{{session.base_url}}/resources/adminNav.css");
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="{{session.base_url}}/public/admin/dashboard"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="{{session.base_url}}/public/admin/category"><i class="fa fa-fw fa-search"></i> Manage Category</a>
+      <a href="{{session.base_url}}/public/admin/products"><i class="fa fa-fw fa-envelope"></i> Manage Product</a>
+      <a href="{{session.base_url}}/public/admin/cms/pages"><i class="fa fa-fw fa-envelope"></i> Manage CMS Pages</a>
+      <a href="{{session.base_url}}/public/admin/login/logoutAction"
+        ><i class="fa fa-fw fa-user"></i>Logout</a
+      >
+    </div>
+    {% block body %} {% endblock %}
+  </body>
+</html>

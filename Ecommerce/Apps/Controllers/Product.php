@@ -6,6 +6,7 @@ use \Core\View;
 
 class Product extends \Core\Controller{
     public function viewAction(){
+        $filename  =  $this->route_params['filename'];
         UserConfig::getCategories();
         $query = "
                 SELECT 
@@ -29,6 +30,6 @@ class Product extends \Core\Controller{
                     P.productUrlKey = '".$this->route_params['url']."'
                 ";
         $data = User::fetchAll($query);
-        View::renderTemplate('User/productView.html',['data' => $data]);     
+        View::renderTemplate("User/$filename",['data' => $data]);     
     }
 }

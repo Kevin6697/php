@@ -6,6 +6,9 @@ require_once '../vendor/autoload.php';
 
 $_SESSION['base_url'] = "http://localhost/Internship/Ecommerce";
 
+// set_error_handler('Core\Error::errorHandler');
+set_exception_handler('Core\Error::exceptionHandler');
+
 
 $router = new \Core\Router();
 

@@ -60,13 +60,13 @@ class Router{
                 if(is_callable([$controller_object,$action])){
                     $controller_object->$action();
                 }else{
-                    echo "$action no such method found";
+                   throw new \Exception("$action no such method found");
                 }
            }else{
-               echo "$controller no such class found";
+               throw new \Exception("$controller no such class found",404);
            }
         }else{
-            echo "No Route match";
+            throw new \Exception("No Route match",404);
         }
     }
     protected function removeQueryString($url){

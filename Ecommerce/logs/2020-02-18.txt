@@ -1,0 +1,149 @@
+[18-Feb-2020 15:14:42 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected ',''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Core\\Router')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(13): spl_autoload_call('Core\\Router')
+#3 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 66
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:14:52 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:15:04 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/ssds" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/ssds')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/ssds')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/ssds')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/ssds')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/ssds', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/ssds', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/s...')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:15:10 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:15:13 Asia/Kolkata] Uncaught exception: 'Exception' with message 'indexAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:19:46 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/.html" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/.html')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/.html')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/.html')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/.html')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/.html', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/.html', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/....')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:20:00 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/.html" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/.html')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/.html')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/.html')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/.html')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/.html', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/.html', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/....')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:20:02 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/.html" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/.html')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/.html')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/.html')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/.html')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/.html', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/.html', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/....')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:20:02 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/.html" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/.html')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/.html')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/.html')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/.html')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/.html', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/.html', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/....')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:20:04 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/.html" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/.html')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/.html')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/.html')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/.html')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/.html', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/.html', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/....')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:20:06 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/.html" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/.html')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/.html')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/.html')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/.html')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/.html', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/.html', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/....')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:20:11 Asia/Kolkata] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "User/.html" (looked into: ../Apps/Views).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('User/.html')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('User/.html')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('User/.html')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('User/.html')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('User/.html', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Category.php(45): Core\View::renderTemplate('User/.html', Array)
+#6 [internal function]: Apps\Controllers\Category->viewAction()
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/....')
+#10 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Loader\FilesystemLoader.php' on line 227
+--------------------------------------------------------------------------------------
+[18-Feb-2020 15:29:50 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('category/view/c...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------

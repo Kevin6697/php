@@ -6,9 +6,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <style>
-       @import url("{{session.base_url}}/resources/user.css");
-    </style>
+    <link rel="stylesheet"  href="{{session.base_url}}/resources/user.css" >
     </head>
     <body>
         <div class="navbar">
@@ -23,7 +21,10 @@
                     </button>
                 </form> 
                 <div class="dropdown-content">
-                  <a href="#">Link 1</a>
+                  {% for i in  d.child %}
+                  <a href="{{session.base_url}}/public/category/view/categoryView.html/{{i.categoryUrlKey}}">{{i.categoryName}}</a>
+                  
+                  {% endfor %}
                 </div>
               </div>
             {% endfor %}
@@ -35,8 +36,8 @@
         <footer>
             <div class="footer">
                 <a class="active" href="{{session.base_url}}/public/"><i class="fa fa-fw fa-home"></i> Home</a>
-                <a href="{{session.base_url}}/public/"><i class="fa fa-fw fa-search"></i>About Us</a>
-                <a href="{{session.base_url}}/public/"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+                <a href="{{session.base_url}}/public/home/index/about-us"><i class="fa fa-fw fa-search"></i>About Us</a>
+                <a href="{{session.base_url}}/public/home/index/contact-us"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
                 &copy; Copyright Cybercom Creation 2020
               </div>  
         </footer>

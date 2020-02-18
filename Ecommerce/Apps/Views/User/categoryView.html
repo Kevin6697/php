@@ -1,22 +1,49 @@
 {% block body %}
 {% if(data) == null  %}
-<br/>
-No Product Available Currently
+<div class="content" style="padding:20px;font-size: 20px;">
+   No Product Available Currently
+</div>
 {% endif %}
 {% if(data) != null  %}
 <h4>{{categoryName}}</h4>
 <div class="grid-container">
     {% for dt in data %}
    <div class="grid-item">       
-        <div>
-        <a href="{{session.base_url}}/public/product/view/productView.html/{{dt.productUrlKey}}"><img src="{{session.base_url}}/resources/uploads/products/{{dt.productImage}}" height="200" width="200"></a>
-     </div>
-     <a href="{{session.base_url}}/public/product/view/productView.html/{{dt.productUrlKey}}">{{dt.productName}}</a>
+      
+         <div class="container">
+            <a href="{{session.base_url}}/public/product/view/productView.html/{{dt.productUrlKey}}"><img  class="image" src="{{session.base_url}}/resources/uploads/products/{{dt.productImage}}" height="200" width="200"></a>
+      
+         </div>
+     <a  id="productText" href="{{session.base_url}}/public/product/view/productView.html/{{dt.productUrlKey}}">{{dt.productName}}</a>
     </div>
    {% endfor %}
 </div>
 {% endif %}
 {% endblock %}
-
+<style>
+   /* unvisited link */
+#productText:link {
+   color: red;
+ }
+ #productText
+ {
+   text-decoration: none;
+ }
+ 
+ /* visited link */
+ #productText:visited {
+   color: green;
+ }
+ 
+ /* mouse over link */
+ #productText:hover {
+   color:#33FF33 ;
+ }
+ 
+ /* selected link */
+ #productText:active {
+   color: blue;
+ }
+</style>
 </body>
 </html>

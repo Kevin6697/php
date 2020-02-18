@@ -10,7 +10,7 @@ abstract class View{
         if(is_readable($filename)){
             require_once $filename;
         }else{
-            echo "No such file found";
+            throw new \Exception("No such file found");
         }
     }
     public static function renderTemplate($template, $args = []){

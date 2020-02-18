@@ -81,7 +81,6 @@ class Category extends \Core\Controller{
             if($_FILES['cimg']['name'] == null){
                 $hasUploaded = true;
             }else{
-                $data['categoryImage'] = $img;
                 $hasUploaded =  $this->fileUploadAction($_FILES);
             }
             if($hasUploaded){
@@ -90,7 +89,10 @@ class Category extends \Core\Controller{
                 $data = $this->cleanArray($_POST);
                 $data['updatedAt'] = date('d-m-y  h:i:s');
                 $data['categoryUrlKey'] = AdminConfig::cleanUrl($_POST['cname']);
+               if($img !=null ){ $data['categoryImage'] = $img;}
                 $table = 'categories';
+                print_r($data);
+                die();
                 $where = 'categoryId ='.$cid;
                 $result = Admin::update($data, $table, $where);
                 if($result){
@@ -149,6 +151,10 @@ class Category extends \Core\Controller{
                 case 'cdesc':
                     if($value != ""){
                         $data['categoryDescription']  = $value;
+                    }
+                case 'cparent':
+                    if($value != 0){
+                        $data['parentCategory']  = $value;
                     }
                 break;
                 

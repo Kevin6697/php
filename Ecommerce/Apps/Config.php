@@ -8,4 +8,5 @@ class Config{
     const DBNAME = "php_custom_mvc";
     const USERNAME = "root";
     const PASSWORD = "";
+    const SHOW_ERRORS = false;
 }

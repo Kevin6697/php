@@ -15,7 +15,7 @@ abstract class Controller{
                     $this->after();
                 }
             }else{
-                echo "No such method found";
+                throw new \Exception("$method No such method found");
             }
             
     }

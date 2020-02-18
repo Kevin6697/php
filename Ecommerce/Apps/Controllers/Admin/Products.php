@@ -143,7 +143,6 @@ class Products extends \Core\Controller{
             }else{
                 $hasUploaded =  $this->fileUploadAction($_FILES);
                 $img = $_FILES['pimg']['name'];
-                $data['productImage'] = $img;    
             }
             if($hasUploaded)
             {
@@ -152,6 +151,7 @@ class Products extends \Core\Controller{
                 $data['updatedAt'] = date('d-m-y  h:i:s');
                 $table = 'products';
                 $where = "productId = $id";
+                if($img != ""){ $data['productImage'] = $img;}
                 $result = Admin::update($data, $table, $where);
                 if($result){
                     $table = 'products_categories';

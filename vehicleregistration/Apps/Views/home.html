@@ -1,0 +1,7 @@
+{% extends "header.html" %}
+{% block title %}Vehicle{% endblock %} 
+{% block body%}
+<br/>
+    <a href="{{session.base_url}}/public/vehicle/services/register"> Register Vehicle</a> 
+    {{session.errorMessage}}   
+{% endblock %}

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    -->
+    <link href="{{session.base_url}}/resources/css/style.css" rel="stylesheet"> 
+    </head>
+   <body>
+       {% if session.user_id == null %}
+         <a href="{{session.base_url}}/public/user/register">Register</a>
+        <a href="{{session.base_url}}/public/user/index">Login</a>
+       {% else %}
+        <a href="{{session.base_url}}/public/user/logout" onclick="return confirm('Are you sure, you want to logout ?')"> Logout</a> 
+      {% endif %} 
+       {% block body %}{% endblock %}
+   </body> 
+</html>

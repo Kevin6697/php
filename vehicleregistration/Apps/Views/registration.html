@@ -1,0 +1,69 @@
+{% extends "header.html" %}
+{% block title %}Register{% endblock %}
+{% block body %}
+<div class="signup-form">
+    <h2>Register</h2>
+    <p class="hint-text">
+      Create your account. It's free and only takes a minute.
+      <br/>
+      {{session.errorMessage}}
+    </p>
+    <form method="post" action="{{session.base_url}}/public/user/register">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    <input type="text" class="form-control" name="user[first_name]"
+                    required="required" placeholder="First Name" value = "{{data.user.first_name}}">
+                </div>
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    <input type="text" class="form-control" name="user[last_name]"
+                    placeholder="Last Name" required="required" value ="{{data.user.last_name}}">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="user[email]"
+            placeholder="Email" required="required" value = "{{data.user.email}}">
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    <input type="password" placeholder="Password"
+                    name="user[password]" required="required" class="form-control">        
+                   </div>
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    <input type="password" class="form-control" name="user[Confirm Password]" placeholder="Confirm Password">
+                 </div>   
+          </div>
+          </div>
+        <div class="form-group">
+            <input type="text" placeholder="Phone Number"
+            name="user[number]" required="required" value ="{{data.user.number}}" class="form-control">
+        </div>
+        <div class="form-group">
+            <textarea name="address[street]" placeholder="street" required="required" class="form-control">{{data.address.street}}</textarea>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="City"
+            name="address[city]" required="required" value ="{{data.address.city}}" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="State"
+            name="address[state]" required="required" value ="{{data.address.state}}" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="zip Code"
+            name="address[zip]" required="required" value ="{{data.address.zip}}" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Country" value ="{{data.address.country}}"
+            name="address[country]" required="required" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="register"
+            name="register" style="background-color: dodgerblue;" class="form-control">
+        </div>
+    </form>
+       
+   </div>
+{% endblock %}

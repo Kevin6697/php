@@ -1,0 +1,117 @@
+{% extends "header.html" %}
+{% block title %}Register{% endblock %}
+{% block body %}
+<br/>
+<a href="{{session.base_url}}/public/vehicle/services"> Go Back</a> 
+<div class="signup-form">
+    <h2>Register</h2>
+    <p class="hint-text">
+      {{session.errorMessage}}
+    </p>
+    <form method="post" action="{{session.base_url}}/public/vehicle/services/register">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    <input type="text" class="form-control" name="vehicle[title]"
+                    required="required" placeholder="Title" value = "{{data.vehicle.title}}">
+                </div>
+                <div class="col-sm-6 col-md-6 col-xs-6">
+                    <input type="text" class="form-control" id ="vehicle_number" name="vehicle[vehicle_number]"
+                    placeholder="Vehicle Number" required="required" value ="{{data.vehicle.vehicle_number}}">
+                    <div id="vehicleError">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id ="license_number" name="vehicle[user_license_number]"
+            placeholder="License Number" required="required" value = "{{data.vehicle.user_license_number}}">
+            <div id="licenseError">
+            </div>
+        </div>
+        <div class="form-group">
+                    <input type="date" id="txtdate" placeholder="date"
+                    name="vehicle[date]" required="required" class="form-control">        
+        </div> 
+        <div class="form-group">
+            <select name="vehicle[time_slot]" class="form-control">
+                <option hidden selected>Select Time Slot </option>
+                  <option value="9-10">9-10</option>
+                  <option value="10-11">10-11</option>
+                  <option value="11-12">11-12</option>
+                  <option value="12-1">12-1</option>
+                  <option value="1-2">1-2</option>
+                  <option value="2-3">2-3</option>
+                  <option value="3-4">4-5</option>
+                  <option value="5-6">5-6</option>  
+            </select>
+        </div>
+        <div class="form-group">
+            <textarea name="vehicle[vehicle_issue]" placeholder="Issue" required="required" class="form-control">{{data.vehicle.vehicle_issue}}</textarea>
+        </div>
+        <div class="form-group">
+            <select name="vehicle[service_center]" class="form-control">
+                  <option hidden selected>Select Service Center </option>
+                    <option value="center-1">Center-1</option>
+                    <option value="center-2">Center-2</option>
+                    <option value="center-3">Center-3</option>
+                    <option value="center-4">Center-4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="register"
+            name="register" style="background-color: dodgerblue;" class="form-control">
+        </div>
+    </form>
+   </div>
+   <script language="javascript">
+    $(document).ready(function () {
+        $("#vehicle_number").blur(function(){
+            var vehicle = $("#vehicle_number").val();
+            if(vehicle == ""){
+                $("#vehicleError").text("Vehicle Number Required");
+                $("#vehicle_number").focus();
+            }else{
+                var obj = {'vehicleNumber' : vehicle}
+                var data = JSON.stringify(obj);
+                $.ajax({
+                    url : "{{session.base_url}}/public/vehicle/services/checkvehicle",
+                    dataType : 'text',
+                    method : 'POST',
+                    data : {'vehicle' : data},
+                    success : function(result){
+                        alert(result);
+                       if(result == 1){
+                        $("#vehicleError").text("Vehicle Number Must be unique");  
+                        $("#vehicle_number").focus();
+                       }
+                    },
+                });
+            }
+        });
+        $("#license_number").blur(function(){
+            var license = $("#license_number").val();
+            if(license == ""){
+                $("#licenseError").text("License Number Required");
+                $("#license_number").focus();
+            }else{
+                var obj = {'licenseNumber' : license}
+                var data = JSON.stringify(obj);
+                $.ajax({
+                    url : "{{session.base_url}}/public/vehicle/services/checklicnese",
+                    dataType : 'text',
+                    method : 'POST',
+                    data : {'license' : data},
+                    success : function(answer){
+                       if(answer){
+                        $("#licenseError").text("License Number Must be unique");
+                        $("#license_number").focus();  
+                       }
+                    },
+                });
+            }
+    });
+        $("#txtDate" ).datepicker({ minDate: 0});
+    });
+</script>
+{% endblock %}

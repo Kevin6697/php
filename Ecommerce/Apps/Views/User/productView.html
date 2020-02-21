@@ -1,30 +1,127 @@
 {% block body %}
 <div class="row">
-    {% for dt in data %}
-    <div class="column" style="background-color:#aaa;">
-        <img src="{{session.base_url}}/resources/uploads/products/{{dt.productImage}}" height="550" width="650">
-    </div>
-    <div class="column" style="background-color:#bbb;">
-      <h1>{{dt.productName}}</h1>
-      <p>Rs. {{dt.productPrice}}</p>
-      <p>
-          {% if (dt.productStatus) == 1 %}
-            In Stock
-          {% endif %}
-          {% if (dt.productStatus) == 0 %}
-          Currently Available
-        {% endif %}
-      </p>
-      <p>Qty :
-          <form>
-              <select>
-                  <option>1</option> 
-                  <option>2</option>
-                  <option>3</option>  
-              </select>
-          </form>
-      </p>
-    </div>
-    {% endfor %}
-</div>    
+  {% for dt in data %}
+  <div class="column" style="width:40%">
+    <img
+      src="{{session.base_url}}/resources/uploads/products/{{dt.productImage}}"
+      height="550"
+      width="650"
+    />
+  </div>
+  <div class="column" style="width:40%;margin-left: 10%;">
+    <h1>{{dt.productName}}</h1>
+    <p>
+      Rs. {{dt.productPrice}}
+      <span style="margin-left: 40%;">
+        {% if (dt.productStatus) == 1 %} In Stock {% endif %} {% if
+        (dt.productStatus) == 0 %} Currently Available {% endif %}
+        <hr />
+      </span>
+    </p>
+    <p>
+      {% if (dt.productShortDescription) != null %}
+      {{dt.productShortDescription}} {% endif %}
+    </p>
+    <form>
+      <div id="selects">
+        <input type="hidden" value="{{dt.productId}}" id="productId" />
+        <input type="hidden" value="{{session.custId}}" id="custId" />
+        <label for="Qty">Qty</label>
+        <select id="qty" name="qty">
+          <option hidden selected>Select qty </option>
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div id="buttons">
+        <input type="button" id="addtocart" value="Add to cart" />
+        <input type="submit" value="Buy Now " />
+      </div>
+    </form>
+  </div>
+  <p id="result"></p>
+  {% endfor %}
+</div>
+<style>
+  input[type="text"],
+  select {
+    width: 30%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8%;
+  }
+  #selects {
+    margin-left: 25%;
+  }
+  #buttons {
+    margin-top: 4%;
+  }
+  input[type="submit"],
+  input[type="button"] {
+    width: 40%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"] {
+    background-color: #4caf50;
+    margin-left: 5%;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  input[type="button"] {
+    background-color: red;
+  }
+  input[type="button"]:hover {
+    background-color: rgb(216, 32, 32);
+  }
+</style>
+<script>
+  $(document).ready(function(){
+    $("#addtocart").click(function(){
+      var custId = $("#custId").val();
+      if(custId == ""){
+          alert("Please Login");
+          window.open("{{session.base_url}}/public/home/loginForm",'_blank');
+      }else{
+        var qty = $("#qty").val();
+        var productId = $("#productId").val();
+      if(qty == "Select qty"){
+        alert("Please Select Proper Quantity");
+      }else{
+          var obj = {"qty" : qty, "productId":productId};
+          var data1 = JSON.stringify(obj);
+          $.ajax({
+                url : "{{session.base_url}}/public/cart/generate",
+                dataType : 'text',
+                method : 'POST',
+                data : {'obj' : data1},
+                success: function(result){
+                  {# console.log(result) #}
+                  alert(result);
+                },
+                complete : function(result){
+                }
+                /*statusCode: {
+                  200: function() {
+                    alert( "page not found" );
+                  }
+                }*/
+
+          });
+        }
+      }
+    });
+  });
+</script>
 {% endblock %}

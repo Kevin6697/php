@@ -1,0 +1,112 @@
+[21-Feb-2020 10:17:08 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '<''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/viewAction')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 165
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:27:42 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/viewAction')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 178
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:27:49 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/viewAction')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 176
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:33:12 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:33:12 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:38:45 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/49')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:39:13 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/1')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:40:11 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/1')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:40:22 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/1')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:40:42 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/3')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:40:58 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/1')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:41:13 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/1')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:58:30 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/1')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 10:59:53 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/1')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 11:00:12 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete/1')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[21-Feb-2020 11:30:52 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(144): Apps\Models\User::fetchRow('SELECT cartId, ...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Apps\Controllers\Cart->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/viewAction')
+#3 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[21-Feb-2020 11:31:05 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(144): Apps\Models\User::fetchRow('SELECT cartId, ...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Apps\Controllers\Cart->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/viewAction')
+#3 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[21-Feb-2020 11:52:45 Asia/Kolkata] Uncaught exception: 'Exception' with message 'Apps\Controllers\Delete no such class found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('delete')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 66
+--------------------------------------------------------------------------------------
+[21-Feb-2020 11:53:02 Asia/Kolkata] Uncaught exception: 'Exception' with message 'deleteAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('deleteAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/delete')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------

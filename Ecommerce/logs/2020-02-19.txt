@@ -1,0 +1,693 @@
+[19-Feb-2020 10:39:10 Asia/Kolkata] Uncaught exception: 'Exception' with message 'addToCartAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addToCartAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 10:39:10 Asia/Kolkata] Uncaught exception: 'Exception' with message 'addToCartAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addToCartAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 10:39:19 Asia/Kolkata] Uncaught exception: 'Exception' with message 'addToCartAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addToCartAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:07:40 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:07:43 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:14 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:15 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:15 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:21 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:21 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:25 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:35 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:54 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:55 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:55 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:56 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:57 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:58 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:58 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:08:58 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:03 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:03 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:03 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:03 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:12 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:14 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:14 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:14 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:15 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:15 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:15 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:15 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:22 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:22 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:22 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:23 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:23 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart/')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:24 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:26 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:27 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:29 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:33 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:09:40 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:33:06 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected ';', expecting ',' or ')''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 21
+--------------------------------------------------------------------------------------
+[19-Feb-2020 11:37:10 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '"}"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/addToCart')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 22
+--------------------------------------------------------------------------------------
+[19-Feb-2020 12:14:22 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '"<pre>"' (T_CONSTANT_ENCAPSED_STRING)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/view/cartV...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 19
+--------------------------------------------------------------------------------------
+[19-Feb-2020 12:15:09 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected 'UserConfig' (T_STRING)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/view/cartV...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 19
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:16:54 Asia/Kolkata] Uncaught exception: 'Exception' with message 'loginFormAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:21:15 Asia/Kolkata] Uncaught exception: 'Exception' with message 'loginFormAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:22:27 Asia/Kolkata] Uncaught exception: 'Exception' with message 'loginFormAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:23:02 Asia/Kolkata] Uncaught exception: 'Exception' with message 'loginFormAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:23:06 Asia/Kolkata] Uncaught exception: 'Exception' with message 'loginFormAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:23:13 Asia/Kolkata] Uncaught exception: 'Exception' with message 'loginFormAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:42:33 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Core\View::renderTemmplate()'
+Stack trace: #0 [internal function]: Apps\Controllers\Home->loginFormAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 28
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:42:40 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Core\View::renderTemmplate()'
+Stack trace: #0 [internal function]: Apps\Controllers\Home->loginFormAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 28
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:52:45 Asia/Kolkata] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Unknown "body" tag.'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/loginForm....')
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/loginForm....')
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('user/loginForm....', Array)
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(29): Core\View::renderTemplate('user/loginForm....')
+#8 [internal function]: Apps\Controllers\Home->loginFormAction()
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#10 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#11 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#12 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Views\User\loginForm.html' on line 7
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:52:45 Asia/Kolkata] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Unknown "body" tag.'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/loginForm....')
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/loginForm....')
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('user/loginForm....', Array)
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(29): Core\View::renderTemplate('user/loginForm....')
+#8 [internal function]: Apps\Controllers\Home->loginFormAction()
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#10 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#11 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#12 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Views\User\loginForm.html' on line 7
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:52:45 Asia/Kolkata] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Unknown "body" tag.'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/loginForm....')
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/loginForm....')
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('user/loginForm....', Array)
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(29): Core\View::renderTemplate('user/loginForm....')
+#8 [internal function]: Apps\Controllers\Home->loginFormAction()
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#10 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#11 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#12 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Views\User\loginForm.html' on line 7
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:52:53 Asia/Kolkata] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Unexpected token "end of statement block" ("name" expected).'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\TokenParser\BlockTokenParser.php(36): Twig\TokenStream->expect(5)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Parser.php(182): Twig\TokenParser\BlockTokenParser->parse(Object(Twig\Token))
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Parser.php(95): Twig\Parser->subparse(NULL, false)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(479): Twig\Parser->parse(Object(Twig\TokenStream))
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(507): Twig\Environment->parse(Object(Twig\TokenStream))
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/loginForm....')
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/loginForm....')
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('user/loginForm....', Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(29): Core\View::renderTemplate('user/loginForm....')
+#10 [internal function]: Apps\Controllers\Home->loginFormAction()
+#11 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#12 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#13 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#14 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Views\User\loginForm.html' on line 7
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:58:11 Asia/Kolkata] Uncaught exception: 'Error' with message 'Class 'Apps\Controllers\Admin' not found'
+Stack trace: #0 [internal function]: Apps\Controllers\Home->checkCredentialsAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('checkCredential...', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/checkCrede...')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 36
+--------------------------------------------------------------------------------------
+[19-Feb-2020 13:58:35 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '$data' (T_VARIABLE)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 37
+--------------------------------------------------------------------------------------
+[19-Feb-2020 14:07:34 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected 'View' (T_STRING)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 40
+--------------------------------------------------------------------------------------
+[19-Feb-2020 14:11:34 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 39
+--------------------------------------------------------------------------------------
+[19-Feb-2020 14:12:41 Asia/Kolkata] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Unclosed """.'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(460): Twig\Lexer->tokenize(Object(Twig\Source))
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(507): Twig\Environment->tokenize(Object(Twig\Source))
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(348): Twig\Environment->compileSource(Object(Twig\Source))
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(309): Twig\Environment->loadTemplate('__TwigTemplate_...', 'user/loginForm....')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('user/loginForm....')
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\View.php(24): Twig\Environment->render('user/loginForm....', Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(29): Core\View::renderTemplate('user/loginForm....')
+#7 [internal function]: Apps\Controllers\Home->loginFormAction()
+#8 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#9 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('loginFormAction', Array)
+#10 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/loginForm')
+#11 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Views\User\loginForm.html' on line 24
+--------------------------------------------------------------------------------------
+[19-Feb-2020 14:33:57 Asia/Kolkata] Uncaught exception: 'Error' with message 'Class 'Apps\Controllers\AdminConfig' not found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Apps\Controllers\Home->logout()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home/logout')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php' on line 55
+--------------------------------------------------------------------------------------
+[19-Feb-2020 14:35:17 Asia/Kolkata] Uncaught exception: 'Exception' with message 'Apps\Controllers\Login no such class found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('login')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 66
+--------------------------------------------------------------------------------------
+[19-Feb-2020 14:35:53 Asia/Kolkata] Uncaught exception: 'Exception' with message 'Apps\Controllers\Login no such class found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('login')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 66
+--------------------------------------------------------------------------------------
+[19-Feb-2020 14:36:57 Asia/Kolkata] Uncaught exception: 'Exception' with message 'Apps\Controllers\Login no such class found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('login')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 66
+--------------------------------------------------------------------------------------
+[19-Feb-2020 14:37:13 Asia/Kolkata] Uncaught exception: 'Exception' with message 'Apps\Controllers\Login no such class found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('login')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 66
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:36:47 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '$price' (T_VARIABLE)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 35
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:36:48 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '$price' (T_VARIABLE)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 35
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:36:55 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '$price' (T_VARIABLE)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 35
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:37:07 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(34): Apps\Models\User::fetchRow('SELECT productP...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(11): Apps\Controllers\Cart->fetchPrice(NULL)
+#2 [internal function]: Apps\Controllers\Cart->addAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:37:16 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(34): Apps\Models\User::fetchRow('SELECT productP...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(11): Apps\Controllers\Cart->fetchPrice(NULL)
+#2 [internal function]: Apps\Controllers\Cart->addAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:51:46 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 14
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:51:55 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 14
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:52:02 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 14
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:52:03 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 14
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:52:24 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 14
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:52:35 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 14
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:53:01 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 13
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:53:02 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 13
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:53:20 Asia/Kolkata] Uncaught exception: 'Error' with message 'Unsupported operand types'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 13
+--------------------------------------------------------------------------------------
+[19-Feb-2020 15:54:46 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected ';''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 13
+--------------------------------------------------------------------------------------
+[19-Feb-2020 16:10:55 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected '}', expecting ';''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 45
+--------------------------------------------------------------------------------------
+[19-Feb-2020 17:34:40 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Models\User::insert()'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 16
+--------------------------------------------------------------------------------------
+[19-Feb-2020 17:35:04 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Models\User::insert()'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 16
+--------------------------------------------------------------------------------------
+[19-Feb-2020 17:38:09 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Models\User::insert()'
+Stack trace: #0 [internal function]: Apps\Controllers\Cart->addAction()
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#4 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 17
+--------------------------------------------------------------------------------------
+[19-Feb-2020 17:54:40 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected ';', expecting ',' or ')''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Models\\Use...')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php(11): spl_autoload_call('Apps\\Models\\Use...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#4 [internal function]: Apps\Controllers\Product->viewAction()
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#7 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#8 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 19
+--------------------------------------------------------------------------------------
+[19-Feb-2020 18:20:06 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function exec() on null'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(26): Apps\Models\User::insert(Array, 'cart')
+#1 [internal function]: Apps\Controllers\Cart->addAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 22
+--------------------------------------------------------------------------------------
+[19-Feb-2020 18:20:21 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function exec() on null'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(26): Apps\Models\User::insert(Array, 'cart')
+#1 [internal function]: Apps\Controllers\Cart->addAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 22
+--------------------------------------------------------------------------------------
+[19-Feb-2020 18:28:07 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function exec() on null'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(26): Apps\Models\User::insert(Array, 'cart')
+#1 [internal function]: Apps\Controllers\Cart->addAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 22
+--------------------------------------------------------------------------------------
+[19-Feb-2020 18:28:19 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function exec() on null'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(26): Apps\Models\User::insert(Array, 'cart')
+#1 [internal function]: Apps\Controllers\Cart->addAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 22
+--------------------------------------------------------------------------------------
+[19-Feb-2020 18:28:24 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function exec() on null'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(26): Apps\Models\User::insert(Array, 'cart')
+#1 [internal function]: Apps\Controllers\Cart->addAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 22
+--------------------------------------------------------------------------------------
+[19-Feb-2020 18:29:10 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function exec() on null'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(26): Apps\Models\User::insert(Array, 'cart')
+#1 [internal function]: Apps\Controllers\Cart->addAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 22
+--------------------------------------------------------------------------------------
+[19-Feb-2020 18:29:37 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function exec() on null'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(26): Apps\Models\User::insert(Array, 'cart')
+#1 [internal function]: Apps\Controllers\Cart->addAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 22
+--------------------------------------------------------------------------------------
+[19-Feb-2020 18:31:29 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected 'else' (T_ELSE)'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 30
+--------------------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+{% block title %}{% endblock %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @import url("{{session.base_url}}/resources/loginStyle.css");
+</style>
+ {%  block body %}   
+    
+        <div id="mainContainer">   
+        <form action="{{session.base_url}}/public/home/checkCredentials" method="post">
+            <h2>Login</h2>
+            <div class="input-container">
+              <i class="fa fa-envelope icon"></i>
+              <input class="input-field" type="text" required placeholder="Email" name="email">
+              {{errors.emailError}}
+            </div>
+          
+            <div class="input-container">
+              <i class="fa fa-key icon"></i>
+              <input class="input-field" type="password" placeholder="Password" name="psw">
+              {{errors.pwdError}}
+            </div>
+            <button type="submit" class="btn">Login</button>
+          </form>
+          {{session.errorMessage}}
+{% endblock %}

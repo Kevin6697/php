@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>{% block title %}{% endblock %}</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -27,11 +29,40 @@
                   {% endfor %}
                 </div>
               </div>
-            {% endfor %}
+              {% endfor %}
+              {% if session.custId == null %}
+              <a  href="{{session.base_url}}/public/home/loginForm" class="dropbtn" style="color: white;">Login</a>
+              {% else %}   
+              <button onclick="document.getElementById('id01').style.display='block'" class="dropbtn" id="modal">View Cart</button>
+               <a  href="{{session.base_url}}/public/home/logout" class="dropbtn" style="color: white;">Logout</a>
+              {% endif %} 
+             
+              <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4" >
+                  <header class="w3-container w3-teal"> 
+                    <span onclick="document.getElementById('id01').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2>Cart</h2>
+                  </header>
+                  <div class="w3-container" id="displayCart">
+                   </div>
+                  <footer id="headerModal" class="w3-container w3-teal">
+                    <div id="clearCart">
+                         <a href="#" onclick="return confirm('Are you sure?')">Clear Cart</a> 
+                    </div>
+                    <div id="checkout">
+                        <a href="">Checkout</a>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              </div>   
           </div>
-        {% block body %}
-          
-        {% endblock %}
+      <div>
+          {% block body %}
+        
+          {% endblock %}
         <div>
         <footer>
             <div class="footer">
@@ -41,6 +72,88 @@
                 &copy; Copyright Cybercom Creation 2020
               </div>  
         </footer>
-      </div>  
+      </div>
+      <script>
+        $(document).ready(function(){
+          $("#modal").click(function(){
+           $.ajax({
+                url :"{{session.base_url}}/public/cart/viewAction",
+                method : "POST",
+                success : function(result){
+                  $("#displayCart").html(result);
+                },
+           });
+           
+          });
+        });
+
+      </script>
+      <style>
+        #modal{
+          font-size: 20px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+          margin: 0; /* Important for vertical align on mobile phones */
+        }
+        #modal:hover{
+        background-color:lightblue;
+        color : dodgerblue;
+        } 
+        .tooltip {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+          top: -5px;
+          left: 110%;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }       
+        #display{
+          margin-left: 70%;
+        }
+        #checkout{
+          margin-left:  88%;
+        }
+        #clearCart{
+          margin-right:  78%;  
+        }
+       #trash{
+         background-color: transparent;
+         color: black;
+         cursor:pointer;
+         overflow: hidden;
+         border: none;
+         outline:none;
+         margin-top: -10px; 
+       }
+       .total-price {
+        text-align: right;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: bold;
+      }
+      </style>
+      <script>
+        function confirmation(){
+          alert(confirm("are you sure ?"));
+        }
+      </script>
     </body>
 </html>

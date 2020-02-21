@@ -1,0 +1,584 @@
+[20-Feb-2020 09:45:51 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(50): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(12): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->addAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('addAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/add')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:28:09 Asia/Kolkata] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function Apps\Controllers\Cart::cleanArray(), 1 passed in C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php on line 27 and exactly 3 expected'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(27): Apps\Controllers\Cart->cleanArray(36000)
+#1 [internal function]: Apps\Controllers\Cart->generateAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 81
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:28:26 Asia/Kolkata] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function Apps\Controllers\Cart::cleanArray(), 1 passed in C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php on line 27 and exactly 3 expected'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(27): Apps\Controllers\Cart->cleanArray(36000)
+#1 [internal function]: Apps\Controllers\Cart->generateAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 81
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:41:51 Asia/Kolkata] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function Apps\Controllers\Cart::cleanArray(), 4 passed in C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php on line 27 and exactly 5 expected'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(27): Apps\Controllers\Cart->cleanArray(0, 36000, 0, 0)
+#1 [internal function]: Apps\Controllers\Cart->generateAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 81
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:43:10 Asia/Kolkata] Uncaught exception: 'Exception' with message 'cartItemsCleanArrayAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(34): Core\Controller->__call('cartItemsCleanA...', Array)
+#1 [internal function]: Apps\Controllers\Cart->generateAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:51:20 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(116): Apps\Models\User::fetchRow('SELECT quantity...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(34): Apps\Controllers\Cart->checkProductExistsInCart('1')
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:52:20 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(117): Apps\Models\User::fetchRow('SELECT quantity...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(35): Apps\Controllers\Cart->checkProductExistsInCart('1')
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:52:41 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(116): Apps\Models\User::fetchRow('SELECT quantity...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(34): Apps\Controllers\Cart->checkProductExistsInCart('1')
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:53:10 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(116): Apps\Models\User::fetchRow('SELECT quantity...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(34): Apps\Controllers\Cart->checkProductExistsInCart('1')
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:53:34 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(116): Apps\Models\User::fetchRow('SELECT quantity...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(34): Apps\Controllers\Cart->checkProductExistsInCart('1')
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 11:53:45 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(116): Apps\Models\User::fetchRow('SELECT quantity...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(34): Apps\Controllers\Cart->checkProductExistsInCart('1')
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 12:11:56 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(117): Apps\Models\User::fetchRow('SELECT * FROM c...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(19): Apps\Controllers\Cart->checkUserExistsInCart()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 12:12:04 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(117): Apps\Models\User::fetchRow('SELECT * FROM c...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(19): Apps\Controllers\Cart->checkUserExistsInCart()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 12:12:12 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(117): Apps\Models\User::fetchRow('SELECT * FROM c...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(19): Apps\Controllers\Cart->checkUserExistsInCart()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:11:04 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:12:03 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:12:33 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:13:28 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:13:42 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:14:10 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:14:14 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:14:27 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:15:19 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:16:03 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:17:25 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:17:50 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:18:09 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:18:59 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:19:11 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:19:46 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:21:23 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:21:35 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:21:46 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:21:58 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:22:22 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:22:57 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetch() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(82): Apps\Models\User::fetchRow('SELECT total_am...')
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(17): Apps\Controllers\Cart->fetchTotalAmount()
+#2 [internal function]: Apps\Controllers\Cart->generateAction()
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('generateAction', Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#6 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 16
+--------------------------------------------------------------------------------------
+[20-Feb-2020 14:43:09 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected ')''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 [internal function]: spl_autoload_call('Apps\\Controller...')
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(52): class_exists('Apps\\Controller...')
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/generate')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php' on line 117
+--------------------------------------------------------------------------------------
+[20-Feb-2020 16:14:39 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[20-Feb-2020 16:14:46 Asia/Kolkata] Uncaught exception: 'Exception' with message 'No Route match'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#1 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php' on line 69
+--------------------------------------------------------------------------------------
+[20-Feb-2020 16:41:36 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected ';''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): spl_autoload_call('Apps\\Controller...')
+#3 [internal function]: Apps\Controllers\Product->viewAction()
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#7 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 16:41:38 Asia/Kolkata] Uncaught exception: 'ParseError' with message 'syntax error, unexpected ';''
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp7.2\\htd...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('Apps\\Controller...')
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): spl_autoload_call('Apps\\Controller...')
+#3 [internal function]: Apps\Controllers\Product->viewAction()
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#7 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:42 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:52 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:53 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:53 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:53 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:53 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:58 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:58 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:35:58 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCart()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Product.php(10): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Product->viewAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('product/view/pr...')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:37:40 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCartActio()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Home->indexAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:37:43 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCartActio()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Home->indexAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:38:30 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetchAll() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(142): Apps\Models\User::fetchAll(NULL)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php(18): Apps\Controllers\Cart::viewCartAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#3 [internal function]: Apps\Controllers\Home->indexAction()
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#7 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 11
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:38:31 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetchAll() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(142): Apps\Models\User::fetchAll(NULL)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php(18): Apps\Controllers\Cart::viewCartAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#3 [internal function]: Apps\Controllers\Home->indexAction()
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#7 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 11
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:38:31 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetchAll() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(142): Apps\Models\User::fetchAll(NULL)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php(18): Apps\Controllers\Cart::viewCartAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#3 [internal function]: Apps\Controllers\Home->indexAction()
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#7 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 11
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:38:31 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetchAll() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(142): Apps\Models\User::fetchAll(NULL)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php(18): Apps\Controllers\Cart::viewCartAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#3 [internal function]: Apps\Controllers\Home->indexAction()
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#7 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 11
+--------------------------------------------------------------------------------------
+[20-Feb-2020 17:38:37 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to a member function fetchAll() on boolean'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Cart.php(142): Apps\Models\User::fetchAll(NULL)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php(18): Apps\Controllers\Cart::viewCartAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#3 [internal function]: Apps\Controllers\Home->indexAction()
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#5 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#6 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#7 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Models\User.php' on line 11
+--------------------------------------------------------------------------------------
+[20-Feb-2020 18:00:21 Asia/Kolkata] Uncaught exception: 'Exception' with message 'viewActionAction No such method found'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('viewActionActio...', Array)
+#1 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('cart/viewAction')
+#2 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 18:00:36 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCartAction()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Home->indexAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 18:00:36 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCartAction()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Home->indexAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------
+[20-Feb-2020 18:00:37 Asia/Kolkata] Uncaught exception: 'Error' with message 'Call to undefined method Apps\Controllers\Cart::viewCartAction()'
+Stack trace: #0 C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\Home.php(9): Apps\Controllers\UserConfig::getCategories()
+#1 [internal function]: Apps\Controllers\Home->indexAction()
+#2 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Controller.php(14): call_user_func_array(Array, Array)
+#3 C:\xampp7.2\htdocs\Internship\Ecommerce\Core\Router.php(61): Core\Controller->__call('indexAction', Array)
+#4 C:\xampp7.2\htdocs\Internship\Ecommerce\public\index.php(30): Core\Router->dispatch('home')
+#5 {main}
+Thrown in 'C:\xampp7.2\htdocs\Internship\Ecommerce\Apps\Controllers\UserConfig.php' on line 18
+--------------------------------------------------------------------------------------

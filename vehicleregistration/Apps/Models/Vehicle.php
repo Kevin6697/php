@@ -18,7 +18,7 @@ class Vehicle extends \Core\Model{
     }
     public static function is_unique($field, $table, $where){
         $db = Model::connection();  
-        $query = "SELECT  $field FROM $table WHERE $where";
+         $query = "SELECT  $field FROM $table WHERE $where";
         $stmt = $db->query($query);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         if($result == 0){
@@ -27,9 +27,28 @@ class Vehicle extends \Core\Model{
             return true;
         }
     }
+    public static function fetchAll($query){
+        $db = Model::connection();  
+        $stmt = $db->query($query);
+       return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } 
     public static function fetchRow($query){
         $db = Model::connection();  
         $stmt = $db->query($query);
        return $stmt->fetch(PDO::FETCH_ASSOC);
     } 
+    public static function update($data, $where, $table){
+        $db = Model::connection();  
+        $count = 0; 
+        $values = "";
+        foreach($data as $key=>$value){
+            $values .= "$key = '$value'";
+            if($count < sizeof($data)-1){
+                $values .= ",";
+            } 
+            $count++;
+        }
+         $query = "UPDATE $table SET $values WHERE $where";
+        return $db->exec($query);
+    }
 }

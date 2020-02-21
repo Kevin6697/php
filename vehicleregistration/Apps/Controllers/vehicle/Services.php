@@ -7,7 +7,9 @@ use Apps\Models\Vehicle;
 class Services extends \Core\Controller{
     public function indexAction(){
         if($this->isLoggedIn()){
-            View::renderTemplate('home.html');
+            $query ="SELECT * FROM service_registrations WHERE user_id =".$_SESSION['user_id'];
+            $data = Vehicle::fetchAll($query);
+            View::renderTemplate('home.html',['data' => $data]);
         }else{
             $redirect = $_SESSION['base_url']."/public/user/index";
             header("Location:$redirect"); 
@@ -19,12 +21,6 @@ class Services extends \Core\Controller{
                 View::renderTemplate('vehicleRegistration.html');
             }else{
                 $data = $this->cleanArray($_POST['vehicle']);
-                // var_dump(date('y-m-d'));
-                // if($data['date'] <= date('y-m-d')){
-                //     echo "enter Valid date";
-                // }
-                // die();
-                // if($data['date'] ==)
                 $timeslotAvailable = $this->checkTimeSlot($data['timeslot'], $data['date']);
                 if($timeslotAvailable == false){
                     $_SESSION['errorMessage'] = "Sorry max limit for time slot";
@@ -32,6 +28,7 @@ class Services extends \Core\Controller{
                     header("Location:$redirect");  
                 }else{
                     $data['user_id'] = $_SESSION['user_id'];
+                    $data['created_date'] = new  date('d-m-y');
                     $table = 'service_registrations';
                     $user_id = Vehicle::insert($data, $table);
                     if($user_id > 0){
@@ -65,21 +62,29 @@ class Services extends \Core\Controller{
             $table = 'service_registrations';
             $where = "vehicle_number ='".$jsonData['vehicleNumber']."'";
             $unique = Vehicle::is_unique('*',$table, $where);
-            if($unique == 0){
-                return 0;
-            }else{
-                return 1;
-            }
+            echo $unique;
+        }else{
+            $jsonData = (array) json_decode($_GET['vehicleUpdate']);
+            $table = 'service_registrations';
+            $where = "vehicle_number ='".$jsonData['vehicleNumber']."' AND service_id !=".$jsonData['service_id'];
+            $unique = Vehicle::is_unique('*',$table, $where);
+            echo $unique;
         }
     }
     public function checklicenseAction(){
-        $jsonData = (array) json_decode($_GET['license']);
-        $table = 'service_registrations';
-        $where = "user_license_number ='".$jsonData['licenseNumber']."'";
-        $unique_license = Vehicle::is_unique('*',$table, $where);
-        var_dump($unique_license);
-     
-        return $unique_license;
+        if(isset($_GET['license'])){
+            $jsonData = (array) json_decode($_GET['license']);
+            $table = 'service_registrations';
+            $where = "user_license_number ='".$jsonData['licenseNumber']."'";
+            $unique_license = Vehicle::is_unique('*',$table, $where);
+            echo $unique_license;
+        }else{
+            $jsonData = (array) json_decode($_GET['licenseUpdate']);
+            $table = 'service_registrations';
+            $where = "user_license_number ='".$jsonData['licenseNumber']."' AND service_id !=".$jsonData['service_id'];
+            $unique_license = Vehicle::is_unique('*',$table, $where);
+            echo $unique_license;
+        }    
     }
     protected function cleanArray($fielValues){
         $data = [];

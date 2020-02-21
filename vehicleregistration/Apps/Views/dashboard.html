@@ -1,13 +1,16 @@
-{% extends "header.html" %}
-{% block title %}Vehicle{% endblock %} 
-{% block body%}
-<br/>
-    <a href="{{session.base_url}}/public/vehicle/services/register"> Register Vehicle</a> 
-    {{session.errorMessage}}
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <br/>
     {% if data == null %}
         No Registrations
     {% else %}
         <table border=2>
+         <th>User Name</th>
+         <th>Email</th>
+         <th>Phone Number</th>
          <th>Title</th>
          <th>Vehicle Number</th>
          <th>License Number</th>
@@ -16,8 +19,12 @@
          <th>Vehicle Issue</th> 
          <th>Service Center</th> 
          <th>Status</th>
+         <th>Action</th>
             {% for d in data %}
                 <tr>
+                    <td>{{d.first_name}} {{d.last_name}}</td>
+                    <td>{{d.email}}</td>
+                    <td>{{d.phone_number}}</td>
                     <td>{{d.title}}</td>
                     <td>{{d.vehicle_number}}</td>
                     <td>{{d.user_license_number}}</td>
@@ -31,9 +38,14 @@
                         {% else %}
                         Approved
                         {% endif %}
-                    </td>    
+                    </td> 
+                    <td>
+                        <a href="{{session.base_url}}/public/admin/adminHome/update/{{d.service_id}}">Update</a>
+                    </td>   
                 </tr>
             {% endfor %}
     </table>
     {% endif %}   
-{% endblock %}
+
+    </body>
+</html>

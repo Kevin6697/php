@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css" />
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    -->
+        <link href="{{session.base_url}}/resources/css/style.css" rel="stylesheet"> 
+       
+    </head>
+    <body>
+        <div class="signup-form">
+            <h2>Update</h2>
+            <p class="hint-text">
+              {{session.errorMessage}}
+            </p>
+            <form method="post" action="{{session.base_url}}/public/admin/adminHome/update ">
+                <div class="form-group">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-xs-6">
+                                <input type="text" disabled class="form-control" value="{{data.first_name}} {{data.last_name}}">
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-xs-6">
+                                <input type="text" disabled class="form-control" id ="vehicle_number" value ="{{data.email}}">
+                                <div id="vehicleError">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-xs-6">
+                            <input type="hidden" name="vehicle[service_id]" value="{{data.service_id}}" class="form-control" id='service_id' >
+                            <input type="text" class="form-control" name="vehicle[title]"
+                            required="required" placeholder="Title" value = "{{data.title}}">
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xs-6">
+                            <input type="text" class="form-control" id ="vehicle_number_update" name="vehicle[vehicle_number]"
+                            placeholder="Vehicle Number" required="required" value ="{{data.vehicle_number}}">
+                            <div id="vehicleErrorUpdate">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                        <input type="text" id="txtdate" value="{{data.date}}" placeholder="date"
+                            name="vehicle[date]" required="required" class="form-control">        
+                </div> 
+                <div class="form-group">
+                    <input type="text" class="form-control" id ="license_number_update" name="vehicle[user_license_number]"
+                    placeholder="License Number" required="required" value = "{{data.user_license_number}}">
+                    <div id="licenseErrorUpdate">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select name="vehicle[time_slot]" class="form-control">
+                        {% set times = ["9-10","10-11","11-12","12-1","1-2","2-3","3-4","5-6"] %}
+                        <option hidden selected>Select Time Slot </option>
+                         {% for time in times %}
+                            {% set select = (data.timeslot == time) ?'selected' : " " %}
+                           <option value="{{time}}" {{select}}> {{time}}</option>
+                         {% endfor %} 
+                    </select>
+                    <input type="hidden" name="vehicle[previous_slot]" value="{{data.timeslot}}" class="form-control" >
+                        
+                </div>
+                <div class="form-group">
+                    <select name="vehicle[status]" class="form-control">
+                        <option hidden selected>Select Status </option>
+                        {% if data.status == 1 %}
+                            <option value=0>Pending</option>
+                            <option value=1 selected>Approved</option>
+                        {% else %}    
+                            <option value=0 selected >Pending</option>
+                            <option value=1 >Approved</option>
+                        {% endif %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="vehicle[vehicle_issue]" placeholder="Issue" required="required" class="form-control">{{data.vehicle_issue}}</textarea>
+                </div>
+                <div class="form-group">
+                    <select name="vehicle[service_center]" class="form-control">
+                        {% set centers = ["center-1","center-2","center-3","center-4"] %}
+                          <option hidden selected>Select Service Center </option>
+                           {% for center in centers %}
+                           {% set select = (data.service_center == center) ?'selected' : " " %}
+                           <option value="{{center}}" {{select}}> {{center}}</option>
+                      
+                           {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="update"
+                    name="update" style="background-color: dodgerblue;" class="form-control">
+                </div>
+            </form>
+           </div>
+           <script language="javascript">
+            $(document).ready(function () {
+                $("#vehicle_number_update").blur(function(){
+                    var vehicle = $("#vehicle_number_update").val();
+                    var service_id = $("#service_id").val();
+                    if(vehicle == ""){
+                        $("#vehicleErrorUpdate").text("Vehicle Number Required");
+                        $("#vehicle_number_update").focus();
+                    }else{
+                        var obj = {'vehicleNumber' : vehicle,'service_id' : service_id}
+                        var data = JSON.stringify(obj);
+                        $.ajax({
+                            url : "{{session.base_url}}/public/vehicle/services/checkvehicle",
+                            dataType : 'text',
+                            method : 'POST',
+                            data : {'vehicleUpdate' : data},
+                            success : function(result){
+                               if(result == true){
+                                $("#vehicleErrorUpdate").text("Vehicle Number Must be unique");  
+                                $("#vehicle_number_update").focus();
+                               }else{
+                                $("#vehicleErrorUpdate").text("");     
+                               }
+                            },
+                        });
+                    }
+                });
+                $("#license_number_update").blur(function(){
+                    var license = $("#license_number_update").val();
+                    var service_id = $("#service_id").val();
+                    if(license == ""){
+                        $("#licenseErrorUpdate").text("License Number Required");
+                        $("#license_number_update").focus();
+                    }else{
+                        var obj = {'licenseNumber' : license,'service_id' : service_id}
+                        var data = JSON.stringify(obj);
+                        $.ajax({
+                            url : "{{session.base_url}}/public/vehicle/services/checklicense",
+                            dataType : 'text',
+                            method : 'POST',
+                            data : {'licenseUpdate' : data},
+                            success : function(answer){
+                               if(answer){
+                                $("#licenseErrorUpdate").text("License Number Must be unique");
+                                $("#license_number_update").focus();  
+                               }else{
+                                $("#licenseErrorUpdate").text("");
+                                   
+                               }
+                            },
+                        });
+                    }
+            });
+                $("#txtdate").datepicker({
+                    minDate: 1
+                });
+            });
+        </script>
+    </body>
+</html>

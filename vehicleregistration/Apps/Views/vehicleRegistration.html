@@ -23,16 +23,17 @@
                 </div>
             </div>
         </div>
+    
+        <div class="form-group">
+                    <input type="text" id="txtdate" placeholder="date"
+                    name="vehicle[date]" required="required" class="form-control">        
+        </div> 
         <div class="form-group">
             <input type="text" class="form-control" id ="license_number" name="vehicle[user_license_number]"
             placeholder="License Number" required="required" value = "{{data.vehicle.user_license_number}}">
             <div id="licenseError">
             </div>
         </div>
-        <div class="form-group">
-                    <input type="date" id="txtdate" placeholder="date"
-                    name="vehicle[date]" required="required" class="form-control">        
-        </div> 
         <div class="form-group">
             <select name="vehicle[time_slot]" class="form-control">
                 <option hidden selected>Select Time Slot </option>
@@ -80,10 +81,11 @@
                     method : 'POST',
                     data : {'vehicle' : data},
                     success : function(result){
-                        alert(result);
-                       if(result == 1){
+                       if(result == true){
                         $("#vehicleError").text("Vehicle Number Must be unique");  
                         $("#vehicle_number").focus();
+                       }else{
+                        $("#vehicleError").text("");     
                        }
                     },
                 });
@@ -98,7 +100,7 @@
                 var obj = {'licenseNumber' : license}
                 var data = JSON.stringify(obj);
                 $.ajax({
-                    url : "{{session.base_url}}/public/vehicle/services/checklicnese",
+                    url : "{{session.base_url}}/public/vehicle/services/checklicense",
                     dataType : 'text',
                     method : 'POST',
                     data : {'license' : data},
@@ -106,12 +108,17 @@
                        if(answer){
                         $("#licenseError").text("License Number Must be unique");
                         $("#license_number").focus();  
+                       }else{
+                        $("#licenseError").text("");
+                           
                        }
                     },
                 });
             }
     });
-        $("#txtDate" ).datepicker({ minDate: 0});
+        $("#txtdate").datepicker({
+            minDate: 1
+        });
     });
 </script>
 {% endblock %}
